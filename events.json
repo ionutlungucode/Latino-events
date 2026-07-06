@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-07-06T21:07:58.962092+00:00",
+  "actualizat_la": "2026-07-06T21:33:27.678976+00:00",
   "events": [
     {
       "id": "2699238900590621",
@@ -24,6 +24,17 @@
       "colectat_la": "2026-07-06T17:30:00+00:00"
     },
     {
+      "id": "649603471173482",
+      "link": "https://www.facebook.com/events/649603471173482/",
+      "titlu": "Salsa On Sundays @ Rio Club București",
+      "data_raw": "dum, 12 iul. la 14:00",
+      "data_parsed": "2026-07-12T14:00:00",
+      "locatie": "Rio Club, București",
+      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/735945526_10164902387042298_5652065362026003403_n.jpg?stp=dst-jpg_tt6&cstp=mx3344x1254&ctp=p720x720&_nc_cat=111&ccb=1-7&_nc_sid=75d36f&_nc_ohc=ZFbNAOsKp3sQ7kNvwEAMZsc&_nc_oc=Ado5J7qLRk02QHZ3Tq3QZndj_yxvJ_XLn6WXd2B9EzzMICgFzITp0T9yPfq7Zjfryjs&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=W6afoeCRNJpIaYHqLjhN2g&_nc_ss=7b2a8&oh=00_AQCdh8GG5ax2wEP8BubqkmzICz_FrWF9XlI3dFQp4jF2zg&oe=6A51DA2F",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-07-06T21:33:27.678818+00:00"
+    },
+    {
       "id": "1681103233086397",
       "link": "https://www.facebook.com/events/1681103233086397/",
       "titlu": "The Secret – Sirens & Sailors 3rd Anniversary Edition",
@@ -32,17 +43,6 @@
       "locatie": "",
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/725393915_875175982299859_4041970903470174224_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x720&ctp=s1920x720&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=e-3pTsZ6h5sQ7kNvwGjbJlz&_nc_oc=AdqG9wIiu-WTp8fVpdBdYm__XCnNkSlW5BYZALNUL7K0i5yWfcE1BBzdVthlyK-obik&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=C1X_PsJ20--PaDZ0SqvgfA&_nc_ss=7b2a8&oh=00_AQAwAIAbOiG4x5K2q42UtxE5cbSfdRAEuwxsW5O9bGHATA&oe=6A51F3EB",
       "sursa": "The Secret",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
-    },
-    {
-      "id": "1756539045512473",
-      "link": "https://www.facebook.com/events/1756539045512473/",
-      "titlu": "BtoB Bachata con Salsa",
-      "data_raw": "Vi, 2 apr. 2027 la 18:00",
-      "data_parsed": "2027-04-02T18:00:00",
-      "locatie": "NORD Events Center, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/700109924_1616517576574523_7139103753448644179_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x900&ctp=s1600x900&_nc_cat=108&ccb=1-7&_nc_sid=75d36f&_nc_ohc=otRRSrEp8g0Q7kNvwG4x1Cm&_nc_oc=AdoY_KAzdp-98Xg_rKHLda8NaTX2CpgGnN9TDonvSayTIyYwaed01H7Ap-QiiL0SRrk&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=LkntVVw_j67kCSQ5sZzkZQ&_nc_ss=7b2a8&oh=00_AQA9gBg18r8zFq_4iSwC45KlvFPjdKAoOSqGJ7n54FQUTg&oe=6A51E083",
-      "sursa": "Bachata Takes Over Bucharest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
     },
     {
@@ -65,6 +65,17 @@
       "locatie": "AGORA Centru de Evenimente, Iași",
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/689017961_932791813054037_7303340545181928739_n.jpg?stp=dst-jpg_tt6&cstp=mx1248x458&ctp=s1248x458&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=pok6ipj7V-oQ7kNvwHaKbWC&_nc_oc=AdpzBNKWy3oS6sWdwi3hseDk1bnx_B_XuZ4r-a1rX9Mmor5l-7_86lwyRHReHtPKyg8&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=c-LU9V3swQd3BVADxnpFCQ&_nc_ss=7b2a8&oh=00_AQBraby04TusoLQlCW7C41eAi6PT2s2B1vE-fhs4Fv9e2w&oe=6A51E0FD",
       "sursa": "VenVen Fest",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1756539045512473",
+      "link": "https://www.facebook.com/events/1756539045512473/",
+      "titlu": "BtoB Bachata con Salsa",
+      "data_raw": "Vi, 2 apr. 2027 la 18:00",
+      "data_parsed": "2027-04-02T18:00:00",
+      "locatie": "NORD Events Center, București",
+      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/700109924_1616517576574523_7139103753448644179_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x900&ctp=s1600x900&_nc_cat=108&ccb=1-7&_nc_sid=75d36f&_nc_ohc=otRRSrEp8g0Q7kNvwG4x1Cm&_nc_oc=AdoY_KAzdp-98Xg_rKHLda8NaTX2CpgGnN9TDonvSayTIyYwaed01H7Ap-QiiL0SRrk&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=LkntVVw_j67kCSQ5sZzkZQ&_nc_ss=7b2a8&oh=00_AQA9gBg18r8zFq_4iSwC45KlvFPjdKAoOSqGJ7n54FQUTg&oe=6A51E083",
+      "sursa": "Bachata Takes Over Bucharest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
     }
   ]
