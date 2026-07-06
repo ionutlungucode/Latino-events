@@ -27,19 +27,37 @@ from playwright.sync_api import sync_playwright
 # ============================================================
 PAGES_FILE = Path("pages.json")
 
-def load_pages() -> dict:
+def load_pages() -> list[dict]:
+    """
+    Returnează lista paginilor cu structura:
+      [{"name": "...", "url": "...", "skip_recurring": False}, ...]
+
+    Formate suportate în pages.json:
+      {"Nume": "url"}                          — simplu
+      {"Nume": {"url": "...", "skip_recurring": true}}  — cu opțiuni
+      [{"name": "...", "url": "..."}]          — listă
+    """
     if PAGES_FILE.exists():
-        data = json.loads(PAGES_FILE.read_text(encoding="utf-8"))
-        # Format suportat: {"Nume pagina": "url"} sau [{"name": "...", "url": "..."}]
-        if isinstance(data, dict):
-            return data
-        elif isinstance(data, list):
-            return {item["name"]: item["url"] for item in data}
-    # Fallback inline — inlocuieste cu paginile tale reale
-    return {
-        "Exemplu Scoala Salsa": "https://www.facebook.com/exemplu.scoala.salsa/events",
-        "Exemplu Club Latino": "https://www.facebook.com/exemplu.club.latino/events",
-    }
+        raw = json.loads(PAGES_FILE.read_text(encoding="utf-8"))
+        if isinstance(raw, dict):
+            result = []
+            for name, val in raw.items():
+                if isinstance(val, str):
+                    result.append({"name": name, "url": val, "skip_recurring": False})
+                elif isinstance(val, dict):
+                    result.append({
+                        "name": name,
+                        "url": val["url"],
+                        "skip_recurring": val.get("skip_recurring", False),
+                    })
+            return result
+        elif isinstance(raw, list):
+            for item in raw:
+                item.setdefault("skip_recurring", False)
+            return raw
+    return [
+        {"name": "Exemplu", "url": "https://www.facebook.com/exemplu/events", "skip_recurring": False}
+    ]
 
 # --- Setari generale -----------------------------------------
 SESSION_FILE = Path("fb_session.json")   # sesiunea de login salvata
@@ -161,10 +179,19 @@ def main():
         ctx  = browser.new_context(storage_state=str(SESSION_FILE))
         page = ctx.new_page()
 
-        for nume, url in pages.items():
-            print(f"  ⏳ {nume} ...")
+        for pagina in pages:
+            nume, url = pagina["name"], pagina["url"]
+            skip_recurring = pagina.get("skip_recurring", False)
+            print(f"  ⏳ {nume} {'[fără recurente]' if skip_recurring else ''}...")
             try:
                 gasite = extrage_de_pe_pagina(page, nume, url)
+
+                if skip_recurring:
+                    # Păstrează doar evenimentele cu titlu unic (non-recurente)
+                    from collections import Counter
+                    titluri = Counter(ev["titlu"] for ev in gasite)
+                    gasite = [ev for ev in gasite if titluri[ev["titlu"]] == 1]
+
                 noi = [ev for ev in gasite if ev["link"] not in existente]
                 for ev in noi:
                     existente[ev["link"]] = ev

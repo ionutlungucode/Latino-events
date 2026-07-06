@@ -10,5 +10,10 @@
   "VenVen Fest": "https://www.facebook.com/venvenfest/events",
   "Salsa On Sundays": "https://www.facebook.com/mihai.buliga.3/events",
   "Golden Sundays Latino Party": "https://www.facebook.com/profile.php?id=61590956554027&sk=events",
-  "SBK Latino Party": "https://www.facebook.com/profile.php?id=61562749629734&sk=events"
+  "SBK Latino Party": "https://www.facebook.com/profile.php?id=61562749629734&sk=events",
+  "IDance Studio": "https://www.facebook.com/idanceschool/events",
+  "Salsa Factory": {
+    "url": "https://www.facebook.com/salsafactory.ro/events",
+    "skip_recurring": true
+  }
 }
