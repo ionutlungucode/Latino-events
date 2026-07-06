@@ -143,6 +143,8 @@
     color: var(--mango); font-weight: 600; margin-top: 2px;
   }
   .stamp.unknown .day{ font-size: 1.2rem; padding: 4px 0; color: var(--muted); }
+  .stamp-year{ font-size: .62rem; font-weight: 700; color: var(--mango); letter-spacing: .05em; margin-top: 1px; }
+  .section-label.departe{ color: var(--mango); opacity: .85; }
 
   .body{ padding: 32px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
   .title{
@@ -297,7 +299,10 @@ let query = '';
 
 function stamp(d){
   if(!d) return `<div class="stamp unknown"><div class="day">?</div><div class="month">dată</div></div>`;
-  return `<div class="stamp"><div class="day">${d.getDate()}</div><div class="month">${LUNI_SCURT[d.getMonth()]}</div></div>`;
+  const anulAcum = new Date().getFullYear();
+  const anExtra = d.getFullYear() !== anulAcum
+    ? `<div class="stamp-year">${d.getFullYear()}</div>` : '';
+  return `<div class="stamp"><div class="day">${d.getDate()}</div><div class="month">${LUNI_SCURT[d.getMonth()]}</div>${anExtra}</div>`;
 }
 
 function card(ev){
@@ -305,9 +310,11 @@ function card(ev){
   const vizual = ev.imagine
     ? `<div class="visual" style="background-image:url('${ev.imagine}')">${stamp(d)}</div>`
     : `<div class="visual fallback" style="background:linear-gradient(135deg, #33203F, #4A2352 55%, #6B2547)">♪${stamp(d)}</div>`;
+  const anulAcum = new Date().getFullYear();
   const cand = d
-    ? d.toLocaleDateString('ro-RO', { weekday:'long', day:'numeric', month:'long' }) +
-      (d.getHours() !== 20 || d.getMinutes() !== 0 ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '')
+    ? d.toLocaleDateString('ro-RO', { weekday:'long', day:'numeric', month:'long',
+        ...(d.getFullYear() !== anulAcum ? { year:'numeric' } : {}) }) +
+      (d.getHours() !== 0 || d.getMinutes() !== 0 ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '')
     : (ev.data_raw || 'Dată neanunțată');
   return `
   <a class="card" href="${ev.link}" target="_blank" rel="noopener">
@@ -362,7 +369,11 @@ function randeaza(){
     const viitoare = lista.filter(e => e._data && e._data >= a0);
     const faraData = lista.filter(e => !e._data);
     const trecute  = lista.filter(e => e._data && e._data < a0);
-    if(viitoare.length) html += `<div class="section-label hot">Urmează</div>` + viitoare.map(card).join('');
+    const anulAcum = new Date().getFullYear();
+    const curand   = viitoare.filter(e => e._data.getFullYear() === anulAcum);
+    const departe  = viitoare.filter(e => e._data.getFullYear() !== anulAcum);
+    if(curand.length)  html += `<div class="section-label hot">Urmează</div>` + curand.map(card).join('');
+    if(departe.length) html += `<div class="section-label departe">📅 ${departe[0]._data.getFullYear()} și mai departe</div>` + departe.map(card).join('');
     if(faraData.length) html += `<div class="section-label">Dată neanunțată</div>` + faraData.map(card).join('');
     if(trecute.length)  html += `<div class="section-label">Trecute</div>` + trecute.map(card).join('');
   } else {
