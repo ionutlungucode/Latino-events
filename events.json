@@ -1,4 +1,71 @@
 {
-  "actualizat_la": null,
-  "events": []
+  "actualizat_la": "2026-07-06T17:30:00+00:00",
+  "events": [
+    {
+      "id": "2699238900590621",
+      "link": "https://www.facebook.com/events/2699238893923955/?event_time_id=2699238900590621",
+      "titlu": "Latin Nights 4friends every thursday 2026",
+      "data_raw": "J, 9 iul. la 21:00",
+      "data_parsed": "2026-07-09T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1695390411779151",
+      "link": "https://www.facebook.com/events/1695390411779151/",
+      "titlu": "OBSESSION Latino Party",
+      "data_raw": "Vineri la 22:00",
+      "data_parsed": "2026-07-10T22:00:00",
+      "locatie": "Grădina Floreasca, București",
+      "imagine": "",
+      "sursa": "Obsession Latino Party",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1681103233086397",
+      "link": "https://www.facebook.com/events/1681103233086397/",
+      "titlu": "The Secret – Sirens & Sailors 3rd Anniversary Edition",
+      "data_raw": "Sâm, 25 iul. - 26 iul.",
+      "data_parsed": "2026-07-25T00:00:00",
+      "locatie": "",
+      "imagine": "",
+      "sursa": "The Secret",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1756539045512473",
+      "link": "https://www.facebook.com/events/1756539045512473/",
+      "titlu": "BtoB Bachata con Salsa",
+      "data_raw": "Vi, 2 apr. 2027 la 18:00",
+      "data_parsed": "2027-04-02T18:00:00",
+      "locatie": "NORD Events Center, București",
+      "imagine": "",
+      "sursa": "Bachata Takes Over Bucharest",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1276512220835141",
+      "link": "https://www.facebook.com/events/1276512220835141/",
+      "titlu": "GOZADERO LATIN FEST 🔥 20th Anniversary Edition 🎉",
+      "data_raw": "J, 6 aug. la 22:00",
+      "data_parsed": "2026-08-06T22:00:00",
+      "locatie": "Hotel Dorna Mamaia",
+      "imagine": "",
+      "sursa": "Goza de Rou",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "26054034367605191",
+      "link": "https://www.facebook.com/events/26054034367605191/",
+      "titlu": "Ven Ven Festival - 22 Oct - 26 Oct 2026 - Agora Center, Iasi, Romania",
+      "data_raw": "J, 22 oct. - 26 oct.",
+      "data_parsed": "2026-10-22T00:00:00",
+      "locatie": "AGORA Centru de Evenimente, Iași",
+      "imagine": "",
+      "sursa": "VenVen Fest",
+      "colectat_la": "2026-07-06T17:30:00+00:00"
+    }
+  ]
 }
