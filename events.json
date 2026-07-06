@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-07-06T21:33:27.678976+00:00",
+  "actualizat_la": "2026-07-06T21:52:38.656434+00:00",
   "events": [
     {
       "id": "2699238900590621",
@@ -55,6 +55,17 @@
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.99422-6/725689909_1543445163807795_984743113196367950_n.png?stp=dst-jpg_tt6&cstp=mx1640x720&ctp=s1640x720&_nc_cat=110&ccb=1-7&_nc_sid=75d36f&_nc_ohc=f1izniU758EQ7kNvwHUhk6b&_nc_oc=AdpuUTZfzRtDqLVE4q9eFu3tpT6qZqc-UznugxcdlKIM0d1Qr8NirYi_flQAY6ZFLTc&_nc_zt=14&_nc_ht=scontent.fcra2-1.fna&_nc_gid=19zlpt65MXOQm9YLur4bZw&_nc_ss=7b2a8&oh=00_AQCcTr-IWDyiBGA1EF2te95CVTyarR1xUwejjIs0h7GVCQ&oe=6A5203C1",
       "sursa": "Goza de Rou",
       "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1377051010907543",
+      "link": "https://www.facebook.com/events/1377051010907543/",
+      "titlu": "BLF Party",
+      "data_raw": "Vi, 4 sept. la 22:00",
+      "data_parsed": "2026-09-04T22:00:00",
+      "locatie": "NORD Events Center, București",
+      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/733539015_1748247173972862_8347290932616000394_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1600&ctp=s1200x1600&_nc_cat=103&ccb=1-7&_nc_sid=75d36f&_nc_ohc=uch_a4ZfrEEQ7kNvwFp2Hp7&_nc_oc=Adql61WYVS5CTGHVAe7wsMLKCWDRBKDpV4MpgJpOcRqZsLJrEAFIM75VZ7RvUpe5Xok&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=oTpKtqRuAtGPGZ-SI3Mkbg&_nc_ss=7b2a8&oh=00_AQDK8zbWEfrkMEtzil3ElkRxdPErrS-adyQYNHh6VAJS0A&oe=6A51E4BA",
+      "sursa": "IDance Studio",
+      "colectat_la": "2026-07-06T21:52:38.656271+00:00"
     },
     {
       "id": "26054034367605191",
