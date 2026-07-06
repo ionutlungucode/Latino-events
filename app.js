@@ -2,6 +2,63 @@
 
 let allEvents = [];
 
+/* ─── Filtrare evenimente recurente ─────────────────────── */
+/**
+ * Pentru titluri care apar de mai multe ori (recurente),
+ * păstrează doar ocurența din săptămâna curentă.
+ * Dacă nu există niciuna în săptămâna curentă, ia cea mai apropiată viitoare.
+ */
+function deduplicateRecurring(events) {
+  const now      = new Date();
+  const sow      = new Date(now); // start of week (luni)
+  sow.setHours(0, 0, 0, 0);
+  sow.setDate(now.getDate() - ((now.getDay() || 7) - 1));
+  const eow = new Date(sow);
+  eow.setDate(sow.getDate() + 7); // end of week (duminică 23:59:59)
+
+  // Grupăm după titlu normalized
+  const groups = {};
+  events.forEach(ev => {
+    const key = (ev.titlu || ev.link).toLowerCase().trim();
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(ev);
+  });
+
+  const result = [];
+  Object.values(groups).forEach(group => {
+    if (group.length === 1) {
+      result.push(group[0]);
+      return;
+    }
+    // Eveniment recurent — selectăm ocurența potrivită
+    const enriched = group.map(ev => ({
+      ev,
+      date: ev.data_parsed ? new Date(ev.data_parsed) : null,
+    }));
+
+    // 1. Prefer ocurența din săptămâna curentă
+    const thisWeek = enriched.filter(({ date }) => date && date >= sow && date < eow);
+    if (thisWeek.length > 0) {
+      result.push(thisWeek[0].ev);
+      return;
+    }
+
+    // 2. Altfel, cea mai apropiată viitoare
+    const upcoming = enriched
+      .filter(({ date }) => date && date >= now)
+      .sort((a, b) => a.date - b.date);
+    if (upcoming.length > 0) {
+      result.push(upcoming[0].ev);
+      return;
+    }
+
+    // 3. Fallback: primul din grup
+    result.push(group[0]);
+  });
+
+  return result;
+}
+
 /* ─── Bootstrap ──────────────────────────────────────────── */
 async function init() {
   try {
@@ -9,7 +66,7 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
-    allEvents = data.events || [];
+    allEvents = deduplicateRecurring(data.events || []);
 
     // Timestamp actualizare
     if (data.actualizat_la) {

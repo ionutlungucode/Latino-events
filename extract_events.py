@@ -18,7 +18,7 @@ import re
 import sys
 import time
 import random
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -71,6 +71,35 @@ def incarca_evenimente_existente() -> dict:
     return {}
 
 
+LUNI_RO = {
+    'ian': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'mai': 5, 'iun': 6,
+    'iul': 7, 'aug': 8, 'sept': 9, 'oct': 10, 'nov': 11, 'dec': 12
+}
+
+def parse_data_fb(data_raw: str) -> str | None:
+    """
+    Parsează data în format Facebook românesc → ISO 8601.
+    Exemple: 'J, 9 iul. la 21:00', 'L, 7 ian. la 20:00', 'Joi la 21:00'
+    """
+    if not data_raw:
+        return None
+    an = datetime.now().year
+    # "9 iul. la 21:00" sau "9 iul la 21:00"
+    m = re.search(r'(\d{1,2})\s+(\w+)\.?\s+la\s+(\d{1,2}):(\d{2})', data_raw)
+    if m:
+        zi, luna_str, ora, minut = m.groups()
+        luna = LUNI_RO.get(luna_str.lower()[:4].rstrip('.'))
+        if luna:
+            try:
+                dt = datetime(an, luna, int(zi), int(ora), int(minut))
+                if dt < datetime.now() - timedelta(days=1):
+                    dt = dt.replace(year=an + 1)
+                return dt.isoformat()
+            except ValueError:
+                pass
+    return None
+
+
 def extrage_de_pe_pagina(page, nume_pagina: str, url: str) -> list[dict]:
     """Extrage evenimentele vizibile pe pagina /events a unei pagini FB."""
     evenimente = []
@@ -105,6 +134,7 @@ def extrage_de_pe_pagina(page, nume_pagina: str, url: str) -> list[dict]:
             "link":        f"https://www.facebook.com/events/{m.group(1)}",
             "titlu":       linii[1] if len(linii) > 1 else (linii[0] if linii else "Necunoscut"),
             "data_raw":    linii[0] if linii else "",
+            "data_parsed": parse_data_fb(linii[0] if linii else ""),
             "locatie":     linii[2] if len(linii) > 2 else "",
             "imagine":     "",   # placeholder — extins ulterior daca e necesar
             "sursa":       nume_pagina,
