@@ -1,0 +1,17 @@
+# Sesiunea de login Facebook — NU se comite niciodata!
+fb_session.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evenimente Locale</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>🎉 Evenimente Locale</h1>
+      <p class="subtitle">Colectat automat din paginile monitorizate</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="filters-bar">
+      <input type="text" id="search" placeholder="🔍 Caută eveniment sau locație..." />
+
+      <select id="filter-sursa">
+        <option value="">📄 Toate sursele</option>
+      </select>
+
+      <select id="filter-data">
+        <option value="all">📅 Toate datele</option>
+        <option value="upcoming">Viitoare</option>
+        <option value="week">Săptămâna aceasta</option>
+        <option value="month">Luna aceasta</option>
+      </select>
+
+      <span id="count" class="count"></span>
+    </div>
+
+    <div id="events-grid" class="events-grid">
+      <div class="loading">Se încarcă evenimentele…</div>
+    </div>
+
+    <div id="no-events" class="no-events hidden">
+      😕 Niciun eveniment găsit cu filtrele selectate.
+    </div>
+  </main>
+
+  <footer>
+    <p>Actualizat: <span id="last-updated">—</span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
