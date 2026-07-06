@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noches Latinas — Evenimente Latino București</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:      #170D1C;   /* fundal — noapte adâncă, caldă */
+    --night-2:    #211327;   /* strat secundar */
+    --card:       #281733;   /* fundal card */
+    --card-edge:  #3A2347;
+    --fuchsia:    #FF4D7D;   /* neon principal */
+    --mango:      #FFB347;   /* accent secundar */
+    --text:       #F6EEE7;
+    --muted:      #B096AF;
+    --radius: 14px;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background: var(--night);
+    color: var(--text);
+    font-family: 'Outfit', system-ui, sans-serif;
+    min-height: 100vh;
+  }
+  ::selection{ background: var(--fuchsia); color: var(--night); }
+
+  /* ---------- Header ---------- */
+  header{
+    position: relative;
+    padding: 56px 24px 36px;
+    text-align: center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 60% 80% at 20% -10%, rgba(255,77,125,.22), transparent 60%),
+      radial-gradient(ellipse 50% 70% at 85% -5%, rgba(255,179,71,.16), transparent 60%),
+      var(--night-2);
+    border-bottom: 1px solid var(--card-edge);
+  }
+  .eyebrow{
+    font-size: .78rem; letter-spacing: .35em; text-transform: uppercase;
+    color: var(--mango); font-weight: 600; margin-bottom: 10px;
+  }
+  h1{
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2.6rem, 7vw, 4.6rem);
+    letter-spacing: .02em;
+    line-height: 1;
+    text-transform: uppercase;
+    background: linear-gradient(100deg, var(--text) 35%, var(--fuchsia) 70%, var(--mango) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tagline{ color: var(--muted); margin-top: 12px; font-weight: 300; }
+  .updated{ color: var(--muted); font-size: .8rem; margin-top: 6px; opacity: .8; }
+
+  /* ---------- Filtre ---------- */
+  .controls{
+    max-width: 1080px; margin: 0 auto; padding: 22px 24px 6px;
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  }
+  .chips{ display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip{
+    font-family: 'Outfit', sans-serif; font-size: .9rem; font-weight: 500;
+    padding: 9px 18px; border-radius: 999px; cursor: pointer;
+    background: var(--card); color: var(--muted);
+    border: 1px solid var(--card-edge);
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .chip:hover{ color: var(--text); border-color: var(--fuchsia); }
+  .chip.active{
+    background: linear-gradient(100deg, var(--fuchsia), #E0356B);
+    color: #fff; border-color: transparent;
+  }
+  .search{
+    flex: 1; min-width: 220px; margin-left: auto;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--card); border: 1px solid var(--card-edge);
+    border-radius: 999px; padding: 9px 18px;
+  }
+  .search svg{ flex-shrink: 0; opacity: .6; }
+  .search input{
+    background: none; border: none; outline: none; width: 100%;
+    color: var(--text); font-family: 'Outfit', sans-serif; font-size: .95rem;
+  }
+  .search input::placeholder{ color: var(--muted); }
+  .search:focus-within{ border-color: var(--mango); }
+  .chip:focus-visible, .search input:focus-visible{
+    outline: 2px solid var(--mango); outline-offset: 2px;
+  }
+
+  /* ---------- Grid carduri ---------- */
+  .grid{
+    max-width: 1080px; margin: 0 auto;
+    padding: 20px 24px 70px;
+    display: grid; gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card{
+    display: flex; flex-direction: column;
+    background: var(--card);
+    border: 1px solid var(--card-edge);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{
+    transform: translateY(-4px);
+    border-color: var(--fuchsia);
+    box-shadow: 0 14px 34px -14px rgba(255,77,125,.45);
+  }
+  .card:focus-visible{ outline: 2px solid var(--mango); outline-offset: 3px; }
+
+  .visual{
+    position: relative; aspect-ratio: 16/9;
+    background-size: cover; background-position: center;
+  }
+  .visual.fallback{
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Anton', sans-serif; font-size: 3rem; letter-spacing: .05em;
+    color: rgba(246,238,231,.16); text-transform: uppercase;
+  }
+  /* Ștampila de dată — semnătura paginii, ca pe un flyer de club */
+  .stamp{
+    position: absolute; left: 14px; bottom: -22px;
+    width: 64px; text-align: center;
+    background: var(--night);
+    border: 1px solid var(--fuchsia);
+    border-radius: 10px;
+    box-shadow: 0 0 18px -4px rgba(255,77,125,.55);
+    padding: 8px 0 6px;
+  }
+  .stamp .day{
+    font-family: 'Anton', sans-serif; font-size: 1.7rem; line-height: 1;
+    color: var(--text);
+  }
+  .stamp .month{
+    font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--mango); font-weight: 600; margin-top: 2px;
+  }
+  .stamp.unknown .day{ font-size: 1.2rem; padding: 4px 0; color: var(--muted); }
+
+  .body{ padding: 32px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .title{
+    font-weight: 600; font-size: 1.06rem; line-height: 1.3;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .meta{ color: var(--muted); font-size: .88rem; display: flex; align-items: center; gap: 6px; }
+  .meta svg{ flex-shrink: 0; }
+  .foot{
+    margin-top: auto; padding-top: 12px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid var(--card-edge);
+  }
+  .source{
+    font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--mango);
+  }
+  .go{ font-size: .82rem; color: var(--fuchsia); font-weight: 500; }
+
+  /* ---------- Separatoare pe secțiuni de timp ---------- */
+  .section-label{
+    grid-column: 1 / -1;
+    font-family: 'Anton', sans-serif; text-transform: uppercase;
+    letter-spacing: .08em; font-size: 1.1rem; color: var(--muted);
+    display: flex; align-items: center; gap: 14px;
+    margin-top: 10px;
+  }
+  .section-label::after{
+    content: ''; flex: 1; height: 1px;
+    background: linear-gradient(90deg, var(--card-edge), transparent);
+  }
+  .section-label.hot{ color: var(--fuchsia); }
+
+  /* ---------- Stări goale / notificări ---------- */
+  .empty{
+    grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--muted);
+  }
+  .empty strong{ color: var(--text); display: block; font-size: 1.1rem; margin-bottom: 6px; }
+  .notice{
+    max-width: 1080px; margin: 16px auto 0; padding: 0 24px;
+  }
+  .notice > div{
+    background: rgba(255,179,71,.08); border: 1px solid rgba(255,179,71,.35);
+    color: var(--mango); border-radius: 10px; padding: 12px 16px; font-size: .88rem;
+  }
+
+  footer{
+    text-align: center; padding: 26px; color: var(--muted); font-size: .8rem;
+    border-top: 1px solid var(--card-edge);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition: none !important; }
+    html{ scroll-behavior: auto; }
+  }
+  @media (max-width: 560px){
+    header{ padding: 40px 18px 28px; }
+    .grid{ padding: 16px 16px 50px; }
+    .search{ margin-left: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">București · Salsa · Bachata · Kizomba</div>
+  <h1>Noches Latinas</h1>
+  <p class="tagline">Toate evenimentele latino din oraș, într-un singur loc.</p>
+  <p class="updated" id="updated"></p>
+</header>
+
+<div class="notice" id="notice" hidden><div id="noticeText"></div></div>
+
+<div class="controls">
+  <div class="chips" role="group" aria-label="Filtrează după dată">
+    <button class="chip active" data-filter="toate">Toate</button>
+    <button class="chip" data-filter="azi">Azi</button>
+    <button class="chip" data-filter="weekend">Weekend</button>
+    <button class="chip" data-filter="luna">Luna asta</button>
+  </div>
+  <label class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input type="search" id="q" placeholder="Caută eveniment, locație, școală…" aria-label="Caută evenimente">
+  </label>
+</div>
+
+<main class="grid" id="grid" aria-live="polite"></main>
+
+<footer>Actualizat automat din paginile Facebook monitorizate.</footer>
+
+<script>
+/* ============================================================
+   Noches Latinas — citește events.json și afișează cardurile
+   ============================================================ */
+
+const LUNI = {
+  'ianuarie':0,'ian':0, 'februarie':1,'feb':1, 'martie':2,'mar':2,
+  'aprilie':3,'apr':3, 'mai':4, 'iunie':5,'iun':5, 'iulie':6,'iul':6,
+  'august':7,'aug':7, 'septembrie':8,'sept':8,'sep':8, 'octombrie':9,'oct':9,
+  'noiembrie':10,'noi':10,'nov':10, 'decembrie':11,'dec':11
+};
+const LUNI_SCURT = ['IAN','FEB','MAR','APR','MAI','IUN','IUL','AUG','SEP','OCT','NOI','DEC'];
+
+/* Încearcă să extragă o dată din textul brut de pe Facebook
+   (ex: "sâmbătă, 11 iulie", "SÂM., 11 IUL. 21:00", "11 iulie, 21:00") */
+function parseDataRaw(raw){
+  if(!raw) return null;
+  const t = raw.toLowerCase().replace(/[.,]/g, ' ');
+  const m = t.match(/(\d{1,2})\s+([a-zăâîșț]+)/);
+  if(!m) return null;
+  const zi = parseInt(m[1], 10);
+  const luna = LUNI[m[2]];
+  if(luna === undefined || zi < 1 || zi > 31) return null;
+
+  const acum = new Date();
+  let an = acum.getFullYear();
+  const candidat = new Date(an, luna, zi);
+  // dacă data pare cu mult în urmă, e probabil anul viitor
+  if(candidat < new Date(acum.getFullYear(), acum.getMonth(), acum.getDate() - 45)) an += 1;
+
+  const ora = t.match(/(\d{1,2}):(\d{2})/);
+  return new Date(an, luna, zi, ora ? +ora[1] : 20, ora ? +ora[2] : 0);
+}
+
+function azi0(){ const d = new Date(); d.setHours(0,0,0,0); return d; }
+
+function esteAzi(d){
+  const a = azi0();
+  return d >= a && d < new Date(a.getTime() + 86400000);
+}
+function esteWeekend(d){
+  // weekendul curent/care urmează: vineri seară → duminică
+  const a = azi0();
+  const zi = a.getDay();                       // 0=Dum … 6=Sâm
+  const priVineri = new Date(a);
+  priVineri.setDate(a.getDate() + ((5 - zi + 7) % 7));   // vinerea următoare (sau azi)
+  if(zi === 6 || zi === 0) priVineri.setDate(a.getDate() - ((zi + 2) % 7)); // suntem deja în weekend
+  const dum = new Date(priVineri); dum.setDate(priVineri.getDate() + (7 - priVineri.getDay()) % 7);
+  dum.setHours(23,59,59);
+  return d >= priVineri && d <= dum;
+}
+function esteLunaAsta(d){
+  const a = new Date();
+  return d.getFullYear() === a.getFullYear() && d.getMonth() === a.getMonth() && d >= azi0();
+}
+
+/* ---------- Randare ---------- */
+const grid = document.getElementById('grid');
+let evenimente = [];
+let filtruActiv = 'toate';
+let query = '';
+
+function stamp(d){
+  if(!d) return `<div class="stamp unknown"><div class="day">?</div><div class="month">dată</div></div>`;
+  return `<div class="stamp"><div class="day">${d.getDate()}</div><div class="month">${LUNI_SCURT[d.getMonth()]}</div></div>`;
+}
+
+function card(ev){
+  const d = ev._data;
+  const vizual = ev.imagine
+    ? `<div class="visual" style="background-image:url('${ev.imagine}')">${stamp(d)}</div>`
+    : `<div class="visual fallback" style="background:linear-gradient(135deg, #33203F, #4A2352 55%, #6B2547)">♪${stamp(d)}</div>`;
+  const cand = d
+    ? d.toLocaleDateString('ro-RO', { weekday:'long', day:'numeric', month:'long' }) +
+      (d.getHours() !== 20 || d.getMinutes() !== 0 ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '')
+    : (ev.data_raw || 'Dată neanunțată');
+  return `
+  <a class="card" href="${ev.link}" target="_blank" rel="noopener">
+    ${vizual}
+    <div class="body">
+      <div class="title">${ev.titlu || 'Eveniment'}</div>
+      <div class="meta">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <span>${cand}</span>
+      </div>
+      ${ev.locatie ? `<div class="meta">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>${ev.locatie}</span></div>` : ''}
+      <div class="foot">
+        <span class="source">${ev.sursa || ''}</span>
+        <span class="go">Vezi pe Facebook →</span>
+      </div>
+    </div>
+  </a>`;
+}
+
+function randeaza(){
+  const q = query.trim().toLowerCase();
+  let lista = evenimente.filter(ev => {
+    if(q && !`${ev.titlu} ${ev.locatie} ${ev.sursa}`.toLowerCase().includes(q)) return false;
+    const d = ev._data;
+    if(filtruActiv === 'azi')     return d && esteAzi(d);
+    if(filtruActiv === 'weekend') return d && esteWeekend(d);
+    if(filtruActiv === 'luna')    return d && esteLunaAsta(d);
+    return true;
+  });
+
+  // sortare: cele cu dată cresc cronologic (viitoare întâi), fără dată la final
+  const a0 = azi0();
+  lista.sort((x, y) => {
+    if(!x._data && !y._data) return 0;
+    if(!x._data) return 1;
+    if(!y._data) return -1;
+    const xv = x._data >= a0, yv = y._data >= a0;
+    if(xv !== yv) return xv ? -1 : 1;      // viitoarele înaintea celor trecute
+    return xv ? x._data - y._data : y._data - x._data;
+  });
+
+  if(!lista.length){
+    grid.innerHTML = `<div class="empty"><strong>Niciun eveniment găsit</strong>Schimbă filtrul sau caută altceva.</div>`;
+    return;
+  }
+
+  // pe "Toate": secțiuni Urmează / Fără dată / Trecute
+  let html = '';
+  if(filtruActiv === 'toate' && !q){
+    const viitoare = lista.filter(e => e._data && e._data >= a0);
+    const faraData = lista.filter(e => !e._data);
+    const trecute  = lista.filter(e => e._data && e._data < a0);
+    if(viitoare.length) html += `<div class="section-label hot">Urmează</div>` + viitoare.map(card).join('');
+    if(faraData.length) html += `<div class="section-label">Dată neanunțată</div>` + faraData.map(card).join('');
+    if(trecute.length)  html += `<div class="section-label">Trecute</div>` + trecute.map(card).join('');
+  } else {
+    html = lista.map(card).join('');
+  }
+  grid.innerHTML = html;
+}
+
+/* ---------- Filtre & căutare ---------- */
+document.querySelectorAll('.chip').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filtruActiv = btn.dataset.filter;
+    randeaza();
+  });
+});
+document.getElementById('q').addEventListener('input', e => {
+  query = e.target.value;
+  randeaza();
+});
+
+/* ---------- Încărcare date ---------- */
+const DEMO = [
+  { titlu:'Salsa Night — Terasa de Vară', data_raw:'sâmbătă, 11 iulie, 21:00', locatie:'Herăstrău, București', sursa:'Exemplu Club Latino', link:'#' },
+  { titlu:'Bachata Sensual Workshop', data_raw:'duminică, 12 iulie, 18:00', locatie:'Str. Exemplu 10', sursa:'Exemplu Școala Salsa', link:'#' },
+  { titlu:'Kizomba Social', data_raw:'luni, 6 iulie, 20:30', locatie:'Club Exemplu', sursa:'Exemplu Club Latino', link:'#' }
+];
+
+function arataNotice(text){
+  const n = document.getElementById('notice');
+  document.getElementById('noticeText').textContent = text;
+  n.hidden = false;
+}
+
+fetch('./events.json')
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    evenimente = (data.events || []).map(ev => ({ ...ev, _data: parseDataRaw(ev.data_raw) }));
+    if(data.actualizat_la){
+      const d = new Date(data.actualizat_la);
+      document.getElementById('updated').textContent =
+        'Ultima actualizare: ' + d.toLocaleDateString('ro-RO', { day:'numeric', month:'long', hour:'2-digit', minute:'2-digit' });
+    }
+    randeaza();
+  })
+  .catch(() => {
+    arataNotice('Nu am găsit events.json — se afișează date demo. Pe Netlify, pune events.json lângă index.html.');
+    evenimente = DEMO.map(ev => ({ ...ev, _data: parseDataRaw(ev.data_raw) }));
+    randeaza();
+  });
+</script>
+</body>
+</html>
