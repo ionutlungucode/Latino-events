@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-07-06T21:52:38.656434+00:00",
+  "actualizat_la": "2026-07-06T21:54:50.141907+00:00",
   "events": [
     {
       "id": "2699238900590621",
@@ -77,6 +77,17 @@
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/689017961_932791813054037_7303340545181928739_n.jpg?stp=dst-jpg_tt6&cstp=mx1248x458&ctp=s1248x458&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=pok6ipj7V-oQ7kNvwHaKbWC&_nc_oc=AdpzBNKWy3oS6sWdwi3hseDk1bnx_B_XuZ4r-a1rX9Mmor5l-7_86lwyRHReHtPKyg8&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=c-LU9V3swQd3BVADxnpFCQ&_nc_ss=7b2a8&oh=00_AQBraby04TusoLQlCW7C41eAi6PT2s2B1vE-fhs4Fv9e2w&oe=6A51E0FD",
       "sursa": "VenVen Fest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "831868343261890",
+      "link": "https://www.facebook.com/events/831868343261890/",
+      "titlu": "Intensive Salsa Weeekend 2027",
+      "data_raw": "Sâm, 20 mar. 2027 - 21 mar. 2027",
+      "data_parsed": "2027-03-20T13:00:00",
+      "locatie": "Salsa Factory, Șos. Panduri 71, București",
+      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/681675912_122217820838302395_3067087494413238946_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s1920x1080&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=kAXLIaPk0J8Q7kNvwFrXnxs&_nc_oc=Adq0bH9Em9UQIs92OU7qGGm31obWI8jdTbKW-wqEEBgkXOiXSiS4ddkSnmTEaCmF1HQ&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=KgKAhpnGrRw32Sogt3RNPw&_nc_ss=7b2a8&oh=00_AQDR4T9NJ4u0VPRFoYrnBsJZp213ppxByURnX-ulnbrikw&oe=6A52016B",
+      "sursa": "Salsa Factory",
+      "colectat_la": "2026-07-06T21:54:50.141739+00:00"
     },
     {
       "id": "1756539045512473",
