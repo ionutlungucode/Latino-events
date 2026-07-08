@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-07-06T21:54:50.141907+00:00",
+  "actualizat_la": "2026-07-08T20:26:00.000000+00:00",
   "events": [
     {
       "id": "2699238900590621",
@@ -33,6 +33,39 @@
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/735945526_10164902387042298_5652065362026003403_n.jpg?stp=dst-jpg_tt6&cstp=mx3344x1254&ctp=p720x720&_nc_cat=111&ccb=1-7&_nc_sid=75d36f&_nc_ohc=ZFbNAOsKp3sQ7kNvwEAMZsc&_nc_oc=Ado5J7qLRk02QHZ3Tq3QZndj_yxvJ_XLn6WXd2B9EzzMICgFzITp0T9yPfq7Zjfryjs&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=W6afoeCRNJpIaYHqLjhN2g&_nc_ss=7b2a8&oh=00_AQCdh8GG5ax2wEP8BubqkmzICz_FrWF9XlI3dFQp4jF2zg&oe=6A51DA2F",
       "sursa": "Salsa On Sundays",
       "colectat_la": "2026-07-06T21:33:27.678818+00:00"
+    },
+    {
+      "id": "2108151913100500",
+      "link": "https://www.facebook.com/events/2108151913100500/",
+      "titlu": "Golden Sundays - 12 iulie 2026",
+      "data_raw": "dum, 12 iul. la 18:00",
+      "data_parsed": "2026-07-12T18:00:00",
+      "locatie": "Velazur Lounge, Calea 13 Septembrie 221-225, Prosper Mall, etajul 3, București",
+      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/740215756_122109264591365218_8674162592567554389_n.jpg?stp=dst-jpg_tt6&cstp=mx640x360&ctp=s640x360&_nc_cat=106&ccb=1-7&_nc_sid=75d36f&_nc_ohc=0_0oTCDgHPgQ7kNvwFx8iK8&_nc_oc=AdroIltxMJhInt0ncgG0_7b3sWA8dNJw9Pk-YPwK_eSRDKrp-XKHd-Ag9xBmLOTk-6E&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=0XequiYOX96-af_wGsm1MA&_nc_ss=7b2a8&oh=00_AQD52iARTDpcf8RrTn9zbVMhgQADj0pYqxtptf5rwXw1KQ&oe=6A548402",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-07-08T20:26:00+00:00"
+    },
+    {
+      "id": "1845850173487313",
+      "link": "https://www.facebook.com/events/1845850173487313/",
+      "titlu": "AVENTURA LATINO PARTY 🌸 🌿 🍸 VINERI 17 IULIE | AZERO CLUB",
+      "data_raw": "Vi, 17 iul. la 22:00",
+      "data_parsed": "2026-07-17T22:00:00",
+      "locatie": "AZero Club, București",
+      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/741940782_1627593422701981_6594216607739869623_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x628&ctp=s1200x628&_nc_cat=101&ccb=1-7&_nc_sid=75d36f&_nc_ohc=YtDL7v72KpwQ7kNvwFmIKgT&_nc_oc=Adr2N28HrxqC7S51EemyEseIaXuxs9DqPwnW1mkqpsjCyQh3tREh4ZR18I9xyT0vxis&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=8U2TRpzWS6nlObMclpVWXg&_nc_ss=7b2a8&oh=00_AQBG6NkUFkv_ihvpNjcnDOtECzf_ASNjbgS3B1IbC_LZ6g&oe=6A549DD0",
+      "sursa": "Global Latino Bucharest",
+      "colectat_la": "2026-07-08T20:26:00+00:00"
+    },
+    {
+      "id": "1799042760714753",
+      "link": "https://www.facebook.com/events/1766717103947319/?event_time_id=1799042760714753",
+      "titlu": "¡A BAILAR! By Salsa on Sundays Bucharest",
+      "data_raw": "Sâm, 18 iul. la 22:30",
+      "data_parsed": "2026-07-18T22:30:00",
+      "locatie": "Rio Club Bucuresti, București",
+      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/661742449_10164507748837298_4029690627219755132_n.jpg?stp=dst-jpg_tt6&cstp=mx3344x1254&ctp=p720x720&_nc_cat=103&ccb=1-7&_nc_sid=75d36f&_nc_ohc=bQTIDUpKtpcQ7kNvwEFj6VD&_nc_oc=Adq3aOZo8O-yKzHUCIIFhHMYwRZdFa1a3QwfEVRYwwCsgV_aWemBmQpvt5mllTG71xc&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=cZanf06OImji8K5qwNNjag&_nc_ss=7b2a8&oh=00_AQBZ_YkLn9UosI91xg67DjbMDhieMPsxkGSZn8eWruGA2g&oe=6A546DCA",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-07-08T20:26:00+00:00"
     },
     {
       "id": "1681103233086397",
@@ -74,9 +107,20 @@
       "data_raw": "J, 22 oct. - 26 oct.",
       "data_parsed": "2026-10-22T00:00:00",
       "locatie": "AGORA Centru de Evenimente, Iași",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/689017961_932791813054037_7303340545181928739_n.jpg?stp=dst-jpg_tt6&cstp=mx1248x458&ctp=s1248x458&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=pok6ipj7V-oQ7kNvwHaKbWC&_nc_oc=AdpzBNKWy3oS6sWdwi3hseDk1bnx_B_XuZ4r-a1rX9Mmor5l-7_86lwyRHReHtPKyg8&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=c-LU9V3swQd3BVADxnpFCQ&_nc_ss=7b2a8&oh=00_AQBraby04TusoLQlCW7C41eAi6PT2s2B1vE-fhs4Fv9e2w&oe=6A51E0FD",
+      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/689017961_932791813054037_7303340545181928739_n.jpg?stp=dst-jpg_tt6&cstp=mx1248x458&ctp=s1248x458&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=pok6ipj7V-oQ7kNvwHaKbWC&_nc_oc=AdpzBNKWy3oS6sWdwi3hseDk1bnx_B_XuZ4r-a1rX9Mmor5l-7_86lwyRHReHtPKyg8&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=c-LU9V3swQd3BVADxnpFCQ&_nc_ss=7b2a8&oh=00_AQBraby04TusoLQlCW7C41eAi6PT2s2B1vE-fhs4Fv9e2w&oe=6A51E0FD",
       "sursa": "VenVen Fest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "2341817706298614",
+      "link": "https://www.facebook.com/events/2341817706298614/",
+      "titlu": "EL FESTIVAL by SALSA ON SUNDAYS BUCHAREST - 2nd YEAR ANNNIVERSARY",
+      "data_raw": "Vi, 11 dec. - 13 dec.",
+      "data_parsed": "2026-12-11T22:00:00",
+      "locatie": "București",
+      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/673476379_10164554045987298_7150172671957407165_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1067&ctp=s2048x1067&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=3FH9NAfoPXMQ7kNvwGLcXvc&_nc_oc=AdoDr2LlHzsYJuG45SgC5gi9aj5rfJlFno3JC9PL8OYHaaIM58sjlLIrnDrgWj6D0RE&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=FlVbDt8uj0JtgZ7TyZ3uBg&_nc_ss=7b2a8&oh=00_AQBJRdvc8ynQPp4IzrfNUCnnSa8h8qWmb4Gp56ARVwbcuA&oe=6A54A0A5",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-07-08T20:26:00+00:00"
     },
     {
       "id": "831868343261890",
