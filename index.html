@@ -144,6 +144,13 @@
   }
   .stamp.unknown .day{ font-size: 1.2rem; padding: 4px 0; color: var(--muted); }
   .stamp-year{ font-size: .62rem; font-weight: 700; color: var(--mango); letter-spacing: .05em; margin-top: 1px; }
+  .badge-multi{
+    position: absolute; top: 12px; right: 12px;
+    background: rgba(26,15,34,.78); backdrop-filter: blur(4px);
+    border: 1px solid var(--mango); color: var(--mango);
+    font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 999px;
+  }
   .section-label.departe{ color: var(--mango); opacity: .85; }
 
   .body{ padding: 32px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
@@ -253,30 +260,50 @@ const LUNI_SCURT = ['IAN','FEB','MAR','APR','MAI','IUN','IUL','AUG','SEP','OCT',
 function parseDataRaw(raw){
   if(!raw) return null;
   const t = raw.toLowerCase().replace(/[.,]/g, ' ');
-  const m = t.match(/(\d{1,2})\s+([a-zăâîșț]+)/);
-  if(!m) return null;
-  const zi = parseInt(m[1], 10);
-  const luna = LUNI[m[2]];
-  if(luna === undefined || zi < 1 || zi > 31) return null;
+  const re = /(\d{1,2})\s+([a-zăâîșț]+)(?:\s+(20\d\d))?/g;
+  const gasite = [];
+  let m;
+  while((m = re.exec(t))){
+    const zi = parseInt(m[1], 10), luna = LUNI[m[2]];
+    if(luna !== undefined && zi >= 1 && zi <= 31) gasite.push({ zi, luna, an: m[3] ? +m[3] : null });
+  }
+  if(!gasite.length) return null;
 
   const acum = new Date();
-  let an = acum.getFullYear();
-  const candidat = new Date(an, luna, zi);
-  // dacă data pare cu mult în urmă, e probabil anul viitor
-  if(candidat < new Date(acum.getFullYear(), acum.getMonth(), acum.getDate() - 45)) an += 1;
+  const g = gasite[0];
+  let an = g.an || acum.getFullYear();
+  // fără an explicit: dacă data pare cu mult în urmă, e probabil anul viitor
+  if(!g.an && new Date(an, g.luna, g.zi) < new Date(acum.getFullYear(), acum.getMonth(), acum.getDate() - 45)) an += 1;
 
+  // ora apare doar dacă e scrisă explicit; altfel nu afișăm nicio oră
   const ora = t.match(/(\d{1,2}):(\d{2})/);
-  return new Date(an, luna, zi, ora ? +ora[1] : 20, ora ? +ora[2] : 0);
+  const start = new Date(an, g.luna, g.zi, ora ? +ora[1] : 0, ora ? +ora[2] : 0);
+
+  // interval (festival pe mai multe zile): a doua dată din text
+  let sfarsit = null;
+  const f = gasite[1];
+  if(f){
+    let anf = f.an || an;
+    if(!f.an && f.luna < g.luna) anf += 1;
+    const e = new Date(anf, f.luna, f.zi, 23, 59, 59);
+    if(e > start) sfarsit = e;
+  }
+  return { start, sfarsit, areOra: !!ora };
 }
 
 function azi0(){ const d = new Date(); d.setHours(0,0,0,0); return d; }
 
-function esteAzi(d){
-  const a = azi0();
-  return d >= a && d < new Date(a.getTime() + 86400000);
+/* Un eveniment cu interval [s, e] se potrivește dacă se suprapune cu fereastra [de, pana] */
+function seSuprapune(ev, de, pana){
+  const s = ev._data, e = ev._sfarsit || ev._data;
+  return s <= pana && e >= de;
 }
-function esteWeekend(d){
-  // weekendul curent/care urmează: vineri seară → duminică
+function esteAzi(ev){
+  const a = azi0();
+  return seSuprapune(ev, a, new Date(a.getTime() + 86400000 - 1));
+}
+function esteWeekend(ev){
+  // weekendul curent/care urmează: vineri → duminică
   const a = azi0();
   const zi = a.getDay();                       // 0=Dum … 6=Sâm
   const priVineri = new Date(a);
@@ -284,11 +311,19 @@ function esteWeekend(d){
   if(zi === 6 || zi === 0) priVineri.setDate(a.getDate() - ((zi + 2) % 7)); // suntem deja în weekend
   const dum = new Date(priVineri); dum.setDate(priVineri.getDate() + (7 - priVineri.getDay()) % 7);
   dum.setHours(23,59,59);
-  return d >= priVineri && d <= dum;
+  return seSuprapune(ev, priVineri, dum);
 }
-function esteLunaAsta(d){
+function esteLunaAsta(ev){
   const a = new Date();
-  return d.getFullYear() === a.getFullYear() && d.getMonth() === a.getMonth() && d >= azi0();
+  return seSuprapune(ev, azi0(), new Date(a.getFullYear(), a.getMonth() + 1, 0, 23, 59, 59));
+}
+function dataScurta(d){
+  return d.toLocaleDateString('ro-RO', { day:'numeric', month:'short' }).replace('.', '');
+}
+
+function withData(ev){
+  const p = parseDataRaw(ev.data_raw);
+  return { ...ev, _data: p && p.start, _sfarsit: p && p.sfarsit, _areOra: p && p.areOra };
 }
 
 /* ---------- Randare ---------- */
@@ -305,17 +340,29 @@ function stamp(d){
   return `<div class="stamp"><div class="day">${d.getDate()}</div><div class="month">${LUNI_SCURT[d.getMonth()]}</div>${anExtra}</div>`;
 }
 
+function insigna(ev){
+  if(!ev._sfarsit) return '';
+  const nr = Math.round((new Date(ev._sfarsit.getFullYear(), ev._sfarsit.getMonth(), ev._sfarsit.getDate()) - new Date(ev._data.getFullYear(), ev._data.getMonth(), ev._data.getDate())) / 86400000) + 1;
+  return `<div class="badge-multi">${nr} zile</div>`;
+}
+
 function card(ev){
   const d = ev._data;
   const vizual = ev.imagine
-    ? `<div class="visual" style="background-image:url('${ev.imagine}')">${stamp(d)}</div>`
-    : `<div class="visual fallback" style="background:linear-gradient(135deg, #33203F, #4A2352 55%, #6B2547)">♪${stamp(d)}</div>`;
+    ? `<div class="visual" style="background-image:url('${ev.imagine}')">${stamp(d)}${insigna(ev)}</div>`
+    : `<div class="visual fallback" style="background:linear-gradient(135deg, #33203F, #4A2352 55%, #6B2547)">♪${stamp(d)}${insigna(ev)}</div>`;
   const anulAcum = new Date().getFullYear();
-  const cand = d
-    ? d.toLocaleDateString('ro-RO', { weekday:'long', day:'numeric', month:'long',
+  const sf = ev._sfarsit;
+  let cand;
+  if(!d) cand = ev.data_raw || 'Dată neanunțată';
+  else if(sf){
+    const an = sf.getFullYear() !== anulAcum ? ' ' + sf.getFullYear() : '';
+    cand = `${dataScurta(d)} – ${dataScurta(sf)}${an}`;
+  } else {
+    cand = d.toLocaleDateString('ro-RO', { weekday:'long', day:'numeric', month:'long',
         ...(d.getFullYear() !== anulAcum ? { year:'numeric' } : {}) }) +
-      (d.getHours() !== 0 || d.getMinutes() !== 0 ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '')
-    : (ev.data_raw || 'Dată neanunțată');
+      (ev._areOra ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '');
+  }
   return `
   <a class="card" href="${ev.link}" target="_blank" rel="noopener">
     ${vizual}
@@ -341,9 +388,9 @@ function randeaza(){
   let lista = evenimente.filter(ev => {
     if(q && !`${ev.titlu} ${ev.locatie} ${ev.sursa}`.toLowerCase().includes(q)) return false;
     const d = ev._data;
-    if(filtruActiv === 'azi')     return d && esteAzi(d);
-    if(filtruActiv === 'weekend') return d && esteWeekend(d);
-    if(filtruActiv === 'luna')    return d && esteLunaAsta(d);
+    if(filtruActiv === 'azi')     return d && esteAzi(ev);
+    if(filtruActiv === 'weekend') return d && esteWeekend(ev);
+    if(filtruActiv === 'luna')    return d && esteLunaAsta(ev);
     return true;
   });
 
@@ -353,7 +400,7 @@ function randeaza(){
     if(!x._data && !y._data) return 0;
     if(!x._data) return 1;
     if(!y._data) return -1;
-    const xv = x._data >= a0, yv = y._data >= a0;
+    const xv = (x._sfarsit || x._data) >= a0, yv = (y._sfarsit || y._data) >= a0;
     if(xv !== yv) return xv ? -1 : 1;      // viitoarele înaintea celor trecute
     return xv ? x._data - y._data : y._data - x._data;
   });
@@ -366,9 +413,9 @@ function randeaza(){
   // pe "Toate": secțiuni Urmează / Fără dată / Trecute
   let html = '';
   if(filtruActiv === 'toate' && !q){
-    const viitoare = lista.filter(e => e._data && e._data >= a0);
+    const viitoare = lista.filter(e => e._data && (e._sfarsit || e._data) >= a0);
     const faraData = lista.filter(e => !e._data);
-    const trecute  = lista.filter(e => e._data && e._data < a0);
+    const trecute  = lista.filter(e => e._data && (e._sfarsit || e._data) < a0);
     const anulAcum = new Date().getFullYear();
     const curand   = viitoare.filter(e => e._data.getFullYear() === anulAcum);
     const departe  = viitoare.filter(e => e._data.getFullYear() !== anulAcum);
@@ -412,7 +459,7 @@ function arataNotice(text){
 fetch('./events.json')
   .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
-    evenimente = (data.events || []).map(ev => ({ ...ev, _data: parseDataRaw(ev.data_raw) }));
+    evenimente = (data.events || []).map(ev => withData(ev));
     if(data.actualizat_la){
       const d = new Date(data.actualizat_la);
       document.getElementById('updated').textContent =
@@ -422,7 +469,7 @@ fetch('./events.json')
   })
   .catch(() => {
     arataNotice('Nu am găsit events.json — se afișează date demo. Pe Netlify, pune events.json lângă index.html.');
-    evenimente = DEMO.map(ev => ({ ...ev, _data: parseDataRaw(ev.data_raw) }));
+    evenimente = DEMO.map(ev => withData(ev));
     randeaza();
   });
 </script>
