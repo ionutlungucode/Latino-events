@@ -30,7 +30,7 @@
       "data_raw": "J, 15 oct. la 21:00",
       "data_parsed": "2026-10-15T21:00:00",
       "locatie": "Victoriei Ballroom, București",
-      "imagine": "",
+      "imagine": "images/2699238893923955.jpg",
       "sursa": "Latin Nights 4friends",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
@@ -41,7 +41,7 @@
       "data_raw": "Vi, 23 oct. la 21:00",
       "data_parsed": "2026-10-23T21:00:00",
       "locatie": "Casa Presei Libere, București",
-      "imagine": "",
+      "imagine": "images/2271517817032610.jpg",
       "sursa": "Latin Nights 4friends",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
@@ -52,7 +52,7 @@
       "data_raw": "Vi, 23 oct. la 22:00",
       "data_parsed": "2026-10-23T22:00:00",
       "locatie": "Azero Club, București",
-      "imagine": "",
+      "imagine": "images/2937682303235594.jpg",
       "sursa": "Global Latino Bucharest",
       "colectat_la": "2026-10-13T19:00:40.640196+00:00"
     },
@@ -63,7 +63,7 @@
       "data_raw": "Sâm, 24 oct. la 22:30",
       "data_parsed": "2026-10-24T22:30:00",
       "locatie": "Mille 18 Events, București",
-      "imagine": "",
+      "imagine": "images/1997566694195131.jpg",
       "sursa": "The Social Dance Hub",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
@@ -74,7 +74,7 @@
       "data_raw": "Vi, 30 oct. la 23:00",
       "data_parsed": "2026-10-30T23:00:00",
       "locatie": "Terra Events Hall, București",
-      "imagine": "",
+      "imagine": "images/sbk-2026-10-30.jpg",
       "sursa": "SBK Latino Party",
       "colectat_la": "2026-10-13T18:46:46.767147+00:00"
     },
@@ -85,7 +85,7 @@
       "data_raw": "Vi, 6 nov. - 7 nov.",
       "data_parsed": "2026-11-06T22:00:00",
       "locatie": "",
-      "imagine": "",
+      "imagine": "images/1612757666890582.jpg",
       "sursa": "The Secret",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
@@ -96,7 +96,7 @@
       "data_raw": "Vi, 2 apr. 2027 la 18:00",
       "data_parsed": "2027-04-02T18:00:00",
       "locatie": "HALO Events Center, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/700109924_1616517576574523_7139103753448644179_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x900&ctp=s1600x900&_nc_cat=108&ccb=1-7&_nc_sid=75d36f&_nc_ohc=otRRSrEp8g0Q7kNvwG4x1Cm&_nc_oc=AdoY_KAzdp-98Xg_rKHLda8NaTX2CpgGnN9TDonvSayTIyYwaed01H7Ap-QiiL0SRrk&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=LkntVVw_j67kCSQ5sZzkZQ&_nc_ss=7b2a8&oh=00_AQA9gBg18r8zFq_4iSwC45KlvFPjdKAoOSqGJ7n54FQUTg&oe=6A51E083",
+      "imagine": "images/1756539045512473.jpg",
       "sursa": "Bachata Takes Over Bucharest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
     },
@@ -107,7 +107,7 @@
       "data_raw": "J, 1 iul. 2027 - 5 iul. 2027",
       "data_parsed": "2027-07-01T00:00:00",
       "locatie": "Vama Veche, Limanu",
-      "imagine": "",
+      "imagine": "images/1350583080378237.jpg",
       "sursa": "Sunny Waves Dance Festival",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
@@ -118,7 +118,7 @@
       "data_raw": "J, 5 aug. 2027 - 9 aug. 2027",
       "data_parsed": "2027-08-05T00:00:00",
       "locatie": "Hotel Dorna Mamaia, Constanța",
-      "imagine": "",
+      "imagine": "images/1408070568086769.jpg",
       "sursa": "Goza de Rou",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     }

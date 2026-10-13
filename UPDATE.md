@@ -18,5 +18,14 @@ Se rulează cu Claude în Chrome (sesiune Facebook logată). Scraperul Python (`
 8. `actualizat_la` = acum (UTC). Commit „Auto: actualizare evenimente <data>” + `git push` (Netlify publică automat).
 9. Raport scurt: ce e nou, ce a dispărut, ce pagini au dat eroare.
 
+## Poze (salvate local în images/, nu linkuri Facebook)
+Linkurile `fbcdn` expiră, deci afișele se salvează în repo. Pentru fiecare eveniment **nou** (sau fără `imagine` locală):
+1. Deschide pagina evenimentului (`https://www.facebook.com/events/<id>/`) într-un **tab nou, doar pentru acel eveniment** (Chrome permite o singură descărcare automată per tab). Pentru petreceri din postări (mod „postari”): pagina paginii, scroll la postare, cea mai mare imagine din postare.
+2. În pagină, JS: alege `img` cu `src` fbcdn și cel mai mare `naturalWidth*naturalHeight`, `fetch` → blob → `<a download="latino-<id>.jpg">.click()`. Nu returna URL-ul imaginii (Chrome blochează URL-uri cu query string).
+3. Fișierul ajunge în `~/Downloads`. Mută-l cu `sips -Z 800 -s formatOptions 70 ~/Downloads/latino-<id>.jpg --out images/<id>.jpg`, șterge originalul din Downloads.
+4. În events.json: `"imagine": "images/<id>.jpg"`. Evenimentele care există deja cu poză locală nu se descarcă din nou.
+5. La ștergerea unui eveniment, șterge și poza lui din `images/`. Închide taburile deschise.
+6. La commit adaugă și `images/`.
+
 ## Limitări cunoscute
-- Pozele Facebook (`fbcdn`) sunt semnate și expiră; Chrome le blochează la citire, deci evenimentele noi nu au poză.
+- Dacă o poză nu poate fi descărcată, `"imagine": ""` (cardul folosește fundalul degradat).
