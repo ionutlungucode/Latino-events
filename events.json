@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-10-13T18:46:46.767293+00:00",
+  "actualizat_la": "2026-10-13T19:00:40.640513+00:00",
   "events": [
     {
       "id": "1722126182189363",
@@ -35,17 +35,6 @@
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
-      "id": "26054034367605191",
-      "link": "https://www.facebook.com/events/26054034367605191/",
-      "titlu": "Ven Ven Festival - 22 Oct - 26 Oct 2026",
-      "data_raw": "J, 22 oct. - 26 oct.",
-      "data_parsed": "2026-10-22T00:00:00",
-      "locatie": "AGORA Centru de Evenimente, Iași",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/689017961_932791813054037_7303340545181928739_n.jpg?stp=dst-jpg_tt6&cstp=mx1248x458&ctp=s1248x458&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=pok6ipj7V-oQ7kNvwHaKbWC&_nc_oc=AdpzBNKWy3oS6sWdwi3hseDk1bnx_B_XuZ4r-a1rX9Mmor5l-7_86lwyRHReHtPKyg8&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=c-LU9V3swQd3BVADxnpFCQ&_nc_ss=7b2a8&oh=00_AQBraby04TusoLQlCW7C41eAi6PT2s2B1vE-fhs4Fv9e2w&oe=6A51E0FD",
-      "sursa": "VenVen Fest",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
-    },
-    {
       "id": "2271517817032610",
       "link": "https://www.facebook.com/events/2271517817032610/",
       "titlu": "LA LOKURA | 4TH EDITION | 23 OCT 2026 | VIKTORIA EVENTS BALLROOM",
@@ -55,6 +44,17 @@
       "imagine": "",
       "sursa": "Latin Nights 4friends",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "2937682303235594",
+      "link": "https://www.facebook.com/events/2937682303235594/",
+      "titlu": "Aventura Latino Party | 23.10",
+      "data_raw": "Vi, 23 oct. la 22:00",
+      "data_parsed": "2026-10-23T22:00:00",
+      "locatie": "Azero Club, București",
+      "imagine": "",
+      "sursa": "Global Latino Bucharest",
+      "colectat_la": "2026-10-13T19:00:40.640196+00:00"
     },
     {
       "id": "1997566694195131",
