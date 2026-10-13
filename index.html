@@ -342,8 +342,8 @@ function stamp(d){
 
 function insigna(ev){
   if(!ev._sfarsit) return '';
-  const nr = Math.round((new Date(ev._sfarsit.getFullYear(), ev._sfarsit.getMonth(), ev._sfarsit.getDate()) - new Date(ev._data.getFullYear(), ev._data.getMonth(), ev._data.getDate())) / 86400000) + 1;
-  return `<div class="badge-multi">${nr} zile</div>`;
+  const nr = Math.round((new Date(ev._sfarsit.getFullYear(), ev._sfarsit.getMonth(), ev._sfarsit.getDate()) - new Date(ev._data.getFullYear(), ev._data.getMonth(), ev._data.getDate())) / 86400000);   // nopți, nu zile: 21→25 ian = 4 nopți
+  return `<div class="badge-multi">${nr} ${nr === 1 ? 'noapte' : 'nopți'}</div>`;
 }
 
 function card(ev){
