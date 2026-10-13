@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-10-13T19:00:40.640513+00:00",
+  "actualizat_la": "2026-10-13T19:28:33.045204+00:00",
   "events": [
     {
       "id": "1722126182189363",
@@ -68,6 +68,17 @@
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
+      "id": "1160043622728457",
+      "link": "https://www.facebook.com/events/1160043622728457/",
+      "titlu": "Pandance Halloween Weekend 4th Edition",
+      "data_raw": "Vi, 30 oct. - 1 nov.",
+      "data_parsed": "2026-10-30T00:00:00",
+      "locatie": "Sibiu",
+      "imagine": "images/1160043622728457.jpg",
+      "sursa": "Pandance Academy Sibiu",
+      "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
       "id": "sbk-2026-10-30",
       "link": "https://www.facebook.com/profile.php?id=61562749629734",
       "titlu": "SBK Latino Party — Moonlight Spell (Halloween Edition)",
@@ -88,6 +99,39 @@
       "imagine": "images/1612757666890582.jpg",
       "sursa": "The Secret",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "1547563706147716",
+      "link": "https://www.facebook.com/events/1547563706147716/",
+      "titlu": "15th Transilvania Salsa Fest",
+      "data_raw": "J, 19 nov. - 23 nov.",
+      "data_parsed": "2026-11-19T00:00:00",
+      "locatie": "Grand Hotel Napoca, Cluj-Napoca",
+      "imagine": "images/1547563706147716.jpg",
+      "sursa": "Transilvania Salsa Fest",
+      "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
+      "id": "2069681907087108",
+      "link": "https://www.facebook.com/events/2069681907087108/",
+      "titlu": "Hypnotic Latin Party",
+      "data_raw": "Sâm, 21 nov. la 21:00",
+      "data_parsed": "2026-11-21T21:00:00",
+      "locatie": "Amalfi Alegria, București",
+      "imagine": "images/2069681907087108.jpg",
+      "sursa": "Hypnotic Latin Party",
+      "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
+      "id": "1664773411664414",
+      "link": "https://www.facebook.com/events/1664773411664414/",
+      "titlu": "Congresul Național de Salsa România 2027",
+      "data_raw": "J, 21 ian. 2027 - 25 ian. 2027",
+      "data_parsed": "2027-01-21T00:00:00",
+      "locatie": "Inventa.club, Brașov",
+      "imagine": "images/1664773411664414.jpg",
+      "sursa": "National Salsa Congress Romania",
+      "colectat_la": "2026-10-13T19:28:33.045204+00:00"
     },
     {
       "id": "1756539045512473",
