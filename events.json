@@ -1,109 +1,43 @@
 {
-  "actualizat_la": "2026-07-08T20:26:00.000000+00:00",
+  "actualizat_la": "2026-10-13T18:46:46.767293+00:00",
   "events": [
     {
-      "id": "2699238900590621",
-      "link": "https://www.facebook.com/events/2699238893923955/?event_time_id=2699238900590621",
-      "titlu": "Latin Nights 4friends every thursday 2026",
-      "data_raw": "J, 9 iul. la 21:00",
-      "data_parsed": "2026-07-09T21:00:00",
-      "locatie": "Victoriei Ballroom, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.99422-6/740128638_952262764497086_688506885134061113_n.png?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=106&ccb=1-7&_nc_sid=75d36f&_nc_ohc=twIpiCNv3TgQ7kNvwFvLUfp&_nc_oc=AdqX3q79j4416_i2ITlDIStb7icI4Rdr92AxxfDBEzsue52aQEQsewl_KEZ5KMISWmo&_nc_zt=14&_nc_ht=scontent.fcra2-1.fna&_nc_gid=nWhql7vkW-DG6_ZlsyH0_A&_nc_ss=7b2a8&oh=00_AQD1ZgNGvvSvtBXENH431QTQ74JExG61AkLYmhHcKM470w&oe=6A51FA0B",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
-    },
-    {
-      "id": "1695390411779151",
-      "link": "https://www.facebook.com/events/1695390411779151/",
-      "titlu": "OBSESSION Latino Party",
-      "data_raw": "Vi, 10 iul. la 22:00",
-      "data_parsed": "2026-07-10T22:00:00",
-      "locatie": "Grădina Floreasca, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/727457748_122118047258780328_3034673950660448719_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=s1440x1440&_nc_cat=107&ccb=1-7&_nc_sid=75d36f&_nc_ohc=egONRzt4xA8Q7kNvwGLoenG&_nc_oc=AdrcxDSbiGHrVnLgGnU6OnTFuoLkmz2_PaQ9stU_9jdiHafW-WhWHtuAV873YAAQfW0&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=a6TEw4WCy-yS6bOp9gLosA&_nc_ss=7b2a8&oh=00_AQC7PWUFLBGUwjTek8cLoA82SEeRtBGGSXjYSbGG9vjrjQ&oe=6A51FFFB",
-      "sursa": "Obsession Latino Party",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
-    },
-    {
-      "id": "649603471173482",
-      "link": "https://www.facebook.com/events/649603471173482/",
-      "titlu": "Salsa On Sundays @ Rio Club București",
-      "data_raw": "dum, 12 iul. la 14:00",
-      "data_parsed": "2026-07-12T14:00:00",
-      "locatie": "Rio Club, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/735945526_10164902387042298_5652065362026003403_n.jpg?stp=dst-jpg_tt6&cstp=mx3344x1254&ctp=p720x720&_nc_cat=111&ccb=1-7&_nc_sid=75d36f&_nc_ohc=ZFbNAOsKp3sQ7kNvwEAMZsc&_nc_oc=Ado5J7qLRk02QHZ3Tq3QZndj_yxvJ_XLn6WXd2B9EzzMICgFzITp0T9yPfq7Zjfryjs&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=W6afoeCRNJpIaYHqLjhN2g&_nc_ss=7b2a8&oh=00_AQCdh8GG5ax2wEP8BubqkmzICz_FrWF9XlI3dFQp4jF2zg&oe=6A51DA2F",
-      "sursa": "Salsa On Sundays",
-      "colectat_la": "2026-07-06T21:33:27.678818+00:00"
-    },
-    {
-      "id": "2108151913100500",
-      "link": "https://www.facebook.com/events/2108151913100500/",
-      "titlu": "Golden Sundays - 12 iulie 2026",
-      "data_raw": "dum, 12 iul. la 18:00",
-      "data_parsed": "2026-07-12T18:00:00",
-      "locatie": "Velazur Lounge, Calea 13 Septembrie 221-225, Prosper Mall, etajul 3, București",
-      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/740215756_122109264591365218_8674162592567554389_n.jpg?stp=dst-jpg_tt6&cstp=mx640x360&ctp=s640x360&_nc_cat=106&ccb=1-7&_nc_sid=75d36f&_nc_ohc=0_0oTCDgHPgQ7kNvwFx8iK8&_nc_oc=AdroIltxMJhInt0ncgG0_7b3sWA8dNJw9Pk-YPwK_eSRDKrp-XKHd-Ag9xBmLOTk-6E&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=0XequiYOX96-af_wGsm1MA&_nc_ss=7b2a8&oh=00_AQD52iARTDpcf8RrTn9zbVMhgQADj0pYqxtptf5rwXw1KQ&oe=6A548402",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-07-08T20:26:00+00:00"
-    },
-    {
-      "id": "1845850173487313",
-      "link": "https://www.facebook.com/events/1845850173487313/",
-      "titlu": "AVENTURA LATINO PARTY 🌸 🌿 🍸 VINERI 17 IULIE | AZERO CLUB",
-      "data_raw": "Vi, 17 iul. la 22:00",
-      "data_parsed": "2026-07-17T22:00:00",
-      "locatie": "AZero Club, București",
-      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/741940782_1627593422701981_6594216607739869623_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x628&ctp=s1200x628&_nc_cat=101&ccb=1-7&_nc_sid=75d36f&_nc_ohc=YtDL7v72KpwQ7kNvwFmIKgT&_nc_oc=Adr2N28HrxqC7S51EemyEseIaXuxs9DqPwnW1mkqpsjCyQh3tREh4ZR18I9xyT0vxis&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=8U2TRpzWS6nlObMclpVWXg&_nc_ss=7b2a8&oh=00_AQBG6NkUFkv_ihvpNjcnDOtECzf_ASNjbgS3B1IbC_LZ6g&oe=6A549DD0",
-      "sursa": "Global Latino Bucharest",
-      "colectat_la": "2026-07-08T20:26:00+00:00"
-    },
-    {
-      "id": "1799042760714753",
-      "link": "https://www.facebook.com/events/1766717103947319/?event_time_id=1799042760714753",
-      "titlu": "¡A BAILAR! By Salsa on Sundays Bucharest",
-      "data_raw": "Sâm, 18 iul. la 22:30",
-      "data_parsed": "2026-07-18T22:30:00",
-      "locatie": "Rio Club Bucuresti, București",
-      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/661742449_10164507748837298_4029690627219755132_n.jpg?stp=dst-jpg_tt6&cstp=mx3344x1254&ctp=p720x720&_nc_cat=103&ccb=1-7&_nc_sid=75d36f&_nc_ohc=bQTIDUpKtpcQ7kNvwEFj6VD&_nc_oc=Adq3aOZo8O-yKzHUCIIFhHMYwRZdFa1a3QwfEVRYwwCsgV_aWemBmQpvt5mllTG71xc&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=cZanf06OImji8K5qwNNjag&_nc_ss=7b2a8&oh=00_AQBZ_YkLn9UosI91xg67DjbMDhieMPsxkGSZn8eWruGA2g&oe=6A546DCA",
-      "sursa": "Salsa On Sundays",
-      "colectat_la": "2026-07-08T20:26:00+00:00"
-    },
-    {
-      "id": "1681103233086397",
-      "link": "https://www.facebook.com/events/1681103233086397/",
-      "titlu": "The Secret – Sirens & Sailors 3rd Anniversary Edition",
-      "data_raw": "Sâm, 25 iul. - 26 iul.",
-      "data_parsed": "2026-07-25T00:00:00",
+      "id": "1722126182189363",
+      "link": "https://www.facebook.com/events/1722126182189363/",
+      "titlu": "OBSESSION Latino Party — Noche de Octubre",
+      "data_raw": "Vi, 9 oct.",
+      "data_parsed": "2026-10-09T22:00:00",
       "locatie": "",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/725393915_875175982299859_4041970903470174224_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x720&ctp=s1920x720&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=e-3pTsZ6h5sQ7kNvwGjbJlz&_nc_oc=AdqG9wIiu-WTp8fVpdBdYm__XCnNkSlW5BYZALNUL7K0i5yWfcE1BBzdVthlyK-obik&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=C1X_PsJ20--PaDZ0SqvgfA&_nc_ss=7b2a8&oh=00_AQAwAIAbOiG4x5K2q42UtxE5cbSfdRAEuwxsW5O9bGHATA&oe=6A51F3EB",
-      "sursa": "The Secret",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
+      "imagine": "",
+      "sursa": "Obsession Latino Party",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
-      "id": "1276512220835141",
-      "link": "https://www.facebook.com/events/1276512220835141/",
-      "titlu": "GOZADERO LATIN FEST 🔥 20th Anniversary Edition 🎉",
-      "data_raw": "J, 6 aug. la 22:00",
-      "data_parsed": "2026-08-06T22:00:00",
-      "locatie": "Hotel Dorna Mamaia",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.99422-6/725689909_1543445163807795_984743113196367950_n.png?stp=dst-jpg_tt6&cstp=mx1640x720&ctp=s1640x720&_nc_cat=110&ccb=1-7&_nc_sid=75d36f&_nc_ohc=f1izniU758EQ7kNvwHUhk6b&_nc_oc=AdpuUTZfzRtDqLVE4q9eFu3tpT6qZqc-UznugxcdlKIM0d1Qr8NirYi_flQAY6ZFLTc&_nc_zt=14&_nc_ht=scontent.fcra2-1.fna&_nc_gid=19zlpt65MXOQm9YLur4bZw&_nc_ss=7b2a8&oh=00_AQCcTr-IWDyiBGA1EF2te95CVTyarR1xUwejjIs0h7GVCQ&oe=6A5203C1",
-      "sursa": "Goza de Rou",
-      "colectat_la": "2026-07-06T17:30:00+00:00"
+      "id": "1638529064385845",
+      "link": "https://www.facebook.com/events/1638529064385845/",
+      "titlu": "GOLDEN SUNDAYS — SÂMBĂTĂ, 10 OCTOMBRIE",
+      "data_raw": "Sâm, 10 oct.",
+      "data_parsed": "2026-10-10T18:00:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
-      "id": "1377051010907543",
-      "link": "https://www.facebook.com/events/1377051010907543/",
-      "titlu": "BLF Party",
-      "data_raw": "Vi, 4 sept. la 22:00",
-      "data_parsed": "2026-09-04T22:00:00",
-      "locatie": "NORD Events Center, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/733539015_1748247173972862_8347290932616000394_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1600&ctp=s1200x1600&_nc_cat=103&ccb=1-7&_nc_sid=75d36f&_nc_ohc=uch_a4ZfrEEQ7kNvwFp2Hp7&_nc_oc=Adql61WYVS5CTGHVAe7wsMLKCWDRBKDpV4MpgJpOcRqZsLJrEAFIM75VZ7RvUpe5Xok&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=oTpKtqRuAtGPGZ-SI3Mkbg&_nc_ss=7b2a8&oh=00_AQDK8zbWEfrkMEtzil3ElkRxdPErrS-adyQYNHh6VAJS0A&oe=6A51E4BA",
-      "sursa": "IDance Studio",
-      "colectat_la": "2026-07-06T21:52:38.656271+00:00"
+      "id": "2699238893923955",
+      "link": "https://www.facebook.com/events/2699238893923955/",
+      "titlu": "Latin Nights 4friends every thursday 2026",
+      "data_raw": "J, 15 oct. la 21:00",
+      "data_parsed": "2026-10-15T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
       "id": "26054034367605191",
       "link": "https://www.facebook.com/events/26054034367605191/",
-      "titlu": "Ven Ven Festival - 22 Oct - 26 Oct 2026 - Agora Center, Iasi, Romania",
+      "titlu": "Ven Ven Festival - 22 Oct - 26 Oct 2026",
       "data_raw": "J, 22 oct. - 26 oct.",
       "data_parsed": "2026-10-22T00:00:00",
       "locatie": "AGORA Centru de Evenimente, Iași",
@@ -112,26 +46,48 @@
       "colectat_la": "2026-07-06T17:30:00+00:00"
     },
     {
-      "id": "2341817706298614",
-      "link": "https://www.facebook.com/events/2341817706298614/",
-      "titlu": "EL FESTIVAL by SALSA ON SUNDAYS BUCHAREST - 2nd YEAR ANNNIVERSARY",
-      "data_raw": "Vi, 11 dec. - 13 dec.",
-      "data_parsed": "2026-12-11T22:00:00",
-      "locatie": "București",
-      "imagine": "https://scontent.fsbz4-1.fna.fbcdn.net/v/t39.30808-6/673476379_10164554045987298_7150172671957407165_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1067&ctp=s2048x1067&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=3FH9NAfoPXMQ7kNvwGLcXvc&_nc_oc=AdoDr2LlHzsYJuG45SgC5gi9aj5rfJlFno3JC9PL8OYHaaIM58sjlLIrnDrgWj6D0RE&_nc_zt=23&_nc_ht=scontent.fsbz4-1.fna&_nc_gid=FlVbDt8uj0JtgZ7TyZ3uBg&_nc_ss=7b2a8&oh=00_AQBJRdvc8ynQPp4IzrfNUCnnSa8h8qWmb4Gp56ARVwbcuA&oe=6A54A0A5",
-      "sursa": "Salsa On Sundays",
-      "colectat_la": "2026-07-08T20:26:00+00:00"
+      "id": "2271517817032610",
+      "link": "https://www.facebook.com/events/2271517817032610/",
+      "titlu": "LA LOKURA | 4TH EDITION | 23 OCT 2026 | VIKTORIA EVENTS BALLROOM",
+      "data_raw": "Vi, 23 oct. la 21:00",
+      "data_parsed": "2026-10-23T21:00:00",
+      "locatie": "Casa Presei Libere, București",
+      "imagine": "",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
-      "id": "831868343261890",
-      "link": "https://www.facebook.com/events/831868343261890/",
-      "titlu": "Intensive Salsa Weeekend 2027",
-      "data_raw": "Sâm, 20 mar. 2027 - 21 mar. 2027",
-      "data_parsed": "2027-03-20T13:00:00",
-      "locatie": "Salsa Factory, Șos. Panduri 71, București",
-      "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/681675912_122217820838302395_3067087494413238946_n.jpg?stp=dst-jpg_tt6&cstp=mx1920x1080&ctp=s1920x1080&_nc_cat=104&ccb=1-7&_nc_sid=75d36f&_nc_ohc=kAXLIaPk0J8Q7kNvwFrXnxs&_nc_oc=Adq0bH9Em9UQIs92OU7qGGm31obWI8jdTbKW-wqEEBgkXOiXSiS4ddkSnmTEaCmF1HQ&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=KgKAhpnGrRw32Sogt3RNPw&_nc_ss=7b2a8&oh=00_AQDR4T9NJ4u0VPRFoYrnBsJZp213ppxByURnX-ulnbrikw&oe=6A52016B",
-      "sursa": "Salsa Factory",
-      "colectat_la": "2026-07-06T21:54:50.141739+00:00"
+      "id": "1997566694195131",
+      "link": "https://www.facebook.com/events/1997566694195131/",
+      "titlu": "The Social Saturday",
+      "data_raw": "Sâm, 24 oct. la 22:30",
+      "data_parsed": "2026-10-24T22:30:00",
+      "locatie": "Mille 18 Events, București",
+      "imagine": "",
+      "sursa": "The Social Dance Hub",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "sbk-2026-10-30",
+      "link": "https://www.facebook.com/profile.php?id=61562749629734",
+      "titlu": "SBK Latino Party — Moonlight Spell (Halloween Edition)",
+      "data_raw": "Vi, 30 oct. la 23:00",
+      "data_parsed": "2026-10-30T23:00:00",
+      "locatie": "Terra Events Hall, București",
+      "imagine": "",
+      "sursa": "SBK Latino Party",
+      "colectat_la": "2026-10-13T18:46:46.767147+00:00"
+    },
+    {
+      "id": "1612757666890582",
+      "link": "https://www.facebook.com/events/1612757666890582/",
+      "titlu": "The Secret – Noche Mexicana",
+      "data_raw": "Vi, 6 nov. - 7 nov.",
+      "data_parsed": "2026-11-06T22:00:00",
+      "locatie": "",
+      "imagine": "",
+      "sursa": "The Secret",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
       "id": "1756539045512473",
@@ -139,10 +95,32 @@
       "titlu": "BtoB Bachata con Salsa",
       "data_raw": "Vi, 2 apr. 2027 la 18:00",
       "data_parsed": "2027-04-02T18:00:00",
-      "locatie": "NORD Events Center, București",
+      "locatie": "HALO Events Center, București",
       "imagine": "https://scontent.fcra2-1.fna.fbcdn.net/v/t39.30808-6/700109924_1616517576574523_7139103753448644179_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x900&ctp=s1600x900&_nc_cat=108&ccb=1-7&_nc_sid=75d36f&_nc_ohc=otRRSrEp8g0Q7kNvwG4x1Cm&_nc_oc=AdoY_KAzdp-98Xg_rKHLda8NaTX2CpgGnN9TDonvSayTIyYwaed01H7Ap-QiiL0SRrk&_nc_zt=23&_nc_ht=scontent.fcra2-1.fna&_nc_gid=LkntVVw_j67kCSQ5sZzkZQ&_nc_ss=7b2a8&oh=00_AQA9gBg18r8zFq_4iSwC45KlvFPjdKAoOSqGJ7n54FQUTg&oe=6A51E083",
       "sursa": "Bachata Takes Over Bucharest",
       "colectat_la": "2026-07-06T17:30:00+00:00"
+    },
+    {
+      "id": "1350583080378237",
+      "link": "https://www.facebook.com/events/1350583080378237/",
+      "titlu": "SUNNY WAVES - PARTY TILL DAWN | 6TH EDITION 1-5 JULY 2027",
+      "data_raw": "J, 1 iul. 2027 - 5 iul. 2027",
+      "data_parsed": "2027-07-01T00:00:00",
+      "locatie": "Vama Veche, Limanu",
+      "imagine": "",
+      "sursa": "Sunny Waves Dance Festival",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "1408070568086769",
+      "link": "https://www.facebook.com/events/1408070568086769/",
+      "titlu": "GOZADERO LATIN FEST 21th - FEEL THE MAGIC",
+      "data_raw": "J, 5 aug. 2027 - 9 aug. 2027",
+      "data_parsed": "2027-08-05T00:00:00",
+      "locatie": "Hotel Dorna Mamaia, Constanța",
+      "imagine": "",
+      "sursa": "Goza de Rou",
+      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     }
   ]
 }
