@@ -113,6 +113,18 @@
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
+      "id": "salsanama-2026-11-13",
+      "link": "",
+      "titlu": "Salsanamá One vs One Romania",
+      "data_raw": "Vi, 13 nov. - 15 nov.",
+      "data_parsed": "2026-11-13T00:00:00",
+      "locatie": "",
+      "imagine": "images/salsanama-2026-11-13.jpg",
+      "sursa": "Salsanamá Romania",
+      "manual": true,
+      "colectat_la": "2026-10-15T00:00:00+00:00"
+    },
+    {
       "id": "1547563706147716",
       "link": "https://www.facebook.com/events/1547563706147716/",
       "titlu": "15th Transilvania Salsa Fest",
