@@ -35,6 +35,18 @@
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
     },
     {
+      "id": "riseup-2026-10-16",
+      "link": "",
+      "titlu": "Rise Up Latino Festival",
+      "data_raw": "Vi, 16 oct. - 18 oct.",
+      "data_parsed": "2026-10-16T00:00:00",
+      "locatie": "Rio Club, București",
+      "imagine": "images/riseup-2026-10-16.jpg",
+      "sursa": "Rise Up Latino Festival",
+      "manual": true,
+      "colectat_la": "2026-10-15T00:00:00+00:00"
+    },
+    {
       "id": "2271517817032610",
       "link": "https://www.facebook.com/events/2271517817032610/",
       "titlu": "LA LOKURA | 4TH EDITION | 23 OCT 2026 | VIKTORIA EVENTS BALLROOM",

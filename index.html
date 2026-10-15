@@ -363,8 +363,9 @@ function card(ev){
         ...(d.getFullYear() !== anulAcum ? { year:'numeric' } : {}) }) +
       (ev._areOra ? `, ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '');
   }
+  const eLink = !!ev.link;
   return `
-  <a class="card" href="${ev.link}" target="_blank" rel="noopener">
+  <${eLink ? `a class="card" href="${ev.link}" target="_blank" rel="noopener"` : 'div class="card"'}>
     ${vizual}
     <div class="body">
       <div class="title">${ev.titlu || 'Eveniment'}</div>
@@ -377,10 +378,10 @@ function card(ev){
         <span>${ev.locatie}</span></div>` : ''}
       <div class="foot">
         <span class="source">${ev.sursa || ''}</span>
-        <span class="go">Vezi pe Facebook →</span>
+        ${eLink ? '<span class="go">Vezi pe Facebook →</span>' : ''}
       </div>
     </div>
-  </a>`;
+  </${eLink ? 'a' : 'div'}>`;
 }
 
 function randeaza(){
