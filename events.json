@@ -1,28 +1,6 @@
 {
-  "actualizat_la": "2026-10-15T19:36:31.962326+00:00",
+  "actualizat_la": "2026-10-20T06:44:38.641529+00:00",
   "events": [
-    {
-      "id": "1722126182189363",
-      "link": "https://www.facebook.com/events/1722126182189363/",
-      "titlu": "OBSESSION Latino Party — Noche de Octubre",
-      "data_raw": "Vi, 9 oct.",
-      "data_parsed": "2026-10-09T00:00:00",
-      "locatie": "",
-      "imagine": "",
-      "sursa": "Obsession Latino Party",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
-    {
-      "id": "1638529064385845",
-      "link": "https://www.facebook.com/events/1638529064385845/",
-      "titlu": "GOLDEN SUNDAYS — SÂMBĂTĂ, 10 OCTOMBRIE",
-      "data_raw": "Sâm, 10 oct.",
-      "data_parsed": "2026-10-10T00:00:00",
-      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
-      "imagine": "",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
     {
       "id": "2699238893923955",
       "link": "https://www.facebook.com/events/2699238893923955/",
@@ -45,6 +23,17 @@
       "sursa": "Rise Up Latino Festival",
       "manual": true,
       "colectat_la": "2026-10-15T00:00:00+00:00"
+    },
+    {
+      "id": "2699238893923955-2026-10-22",
+      "link": "https://www.facebook.com/events/2699238893923955/",
+      "titlu": "Latin Nights 4friends — Let's Go Nuts! (Pre-party La Lokura #4)",
+      "data_raw": "J, 22 oct. la 21:00",
+      "data_parsed": "2026-10-22T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "images/2699238893923955.jpg",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-10-20T06:44:38.641529+00:00"
     },
     {
       "id": "2271517817032610",
@@ -78,6 +67,17 @@
       "imagine": "images/1997566694195131.jpg",
       "sursa": "The Social Dance Hub",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "1372336929299247",
+      "link": "https://www.facebook.com/events/1372336929299247/",
+      "titlu": "Golden Sundays — Indoor Grand Opening (Winter Location)",
+      "data_raw": "Dum, 25 oct. la 18:00",
+      "data_parsed": "2026-10-25T18:00:00",
+      "locatie": "Union Plaza Hotel (parter), București",
+      "imagine": "images/1372336929299247.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-10-20T06:44:38.641529+00:00"
     },
     {
       "id": "1160043622728457",
