@@ -1,29 +1,6 @@
 {
-  "actualizat_la": "2026-10-20T06:44:38.641529+00:00",
+  "actualizat_la": "2026-10-28T07:56:32.455275+00:00",
   "events": [
-    {
-      "id": "2699238893923955",
-      "link": "https://www.facebook.com/events/2699238893923955/",
-      "titlu": "Latin Nights 4friends every thursday 2026",
-      "data_raw": "J, 15 oct. la 21:00",
-      "data_parsed": "2026-10-15T21:00:00",
-      "locatie": "Victoriei Ballroom, București",
-      "imagine": "images/2699238893923955.jpg",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
-    {
-      "id": "riseup-2026-10-16",
-      "link": "",
-      "titlu": "Rise Up Latino Festival",
-      "data_raw": "Vi, 16 oct. - 18 oct.",
-      "data_parsed": "2026-10-16T00:00:00",
-      "locatie": "Rio Club, București",
-      "imagine": "images/riseup-2026-10-16.jpg",
-      "sursa": "Rise Up Latino Festival",
-      "manual": true,
-      "colectat_la": "2026-10-15T00:00:00+00:00"
-    },
     {
       "id": "2699238893923955-2026-10-22",
       "link": "https://www.facebook.com/events/2699238893923955/",
@@ -78,6 +55,17 @@
       "imagine": "images/1372336929299247.jpg",
       "sursa": "Golden Sundays Latino Party",
       "colectat_la": "2026-10-20T06:44:38.641529+00:00"
+    },
+    {
+      "id": "2699238893923955-2026-10-29",
+      "link": "https://www.facebook.com/events/2699238893923955/",
+      "titlu": "Latin Nights 4friends every thursday 2026",
+      "data_raw": "J, 29 oct. la 21:00",
+      "data_parsed": "2026-10-29T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "images/2699238893923955.jpg",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-10-28T07:56:32.455275+00:00"
     },
     {
       "id": "1160043622728457",
