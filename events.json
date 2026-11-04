@@ -1,61 +1,6 @@
 {
-  "actualizat_la": "2026-10-28T07:56:32.455275+00:00",
+  "actualizat_la": "2026-11-04T15:08:12.210216+00:00",
   "events": [
-    {
-      "id": "2699238893923955-2026-10-22",
-      "link": "https://www.facebook.com/events/2699238893923955/",
-      "titlu": "Latin Nights 4friends — Let's Go Nuts! (Pre-party La Lokura #4)",
-      "data_raw": "J, 22 oct. la 21:00",
-      "data_parsed": "2026-10-22T21:00:00",
-      "locatie": "Victoriei Ballroom, București",
-      "imagine": "images/2699238893923955.jpg",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-10-20T06:44:38.641529+00:00"
-    },
-    {
-      "id": "2271517817032610",
-      "link": "https://www.facebook.com/events/2271517817032610/",
-      "titlu": "LA LOKURA | 4TH EDITION | 23 OCT 2026 | VIKTORIA EVENTS BALLROOM",
-      "data_raw": "Vi, 23 oct. la 21:00",
-      "data_parsed": "2026-10-23T21:00:00",
-      "locatie": "Casa Presei Libere, București",
-      "imagine": "images/2271517817032610.jpg",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
-    {
-      "id": "2937682303235594",
-      "link": "https://www.facebook.com/events/2937682303235594/",
-      "titlu": "Aventura Latino Party | 23.10",
-      "data_raw": "Vi, 23 oct. la 22:00",
-      "data_parsed": "2026-10-23T22:00:00",
-      "locatie": "Azero Club, București",
-      "imagine": "images/2937682303235594.jpg",
-      "sursa": "Global Latino Bucharest",
-      "colectat_la": "2026-10-13T19:00:40.640196+00:00"
-    },
-    {
-      "id": "1997566694195131",
-      "link": "https://www.facebook.com/events/1997566694195131/",
-      "titlu": "The Social Saturday",
-      "data_raw": "Sâm, 24 oct. la 22:30",
-      "data_parsed": "2026-10-24T22:30:00",
-      "locatie": "Mille 18 Events, București",
-      "imagine": "images/1997566694195131.jpg",
-      "sursa": "The Social Dance Hub",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
-    {
-      "id": "1372336929299247",
-      "link": "https://www.facebook.com/events/1372336929299247/",
-      "titlu": "Golden Sundays — Indoor Grand Opening (Winter Location)",
-      "data_raw": "Dum, 25 oct. la 18:00",
-      "data_parsed": "2026-10-25T18:00:00",
-      "locatie": "Union Plaza Hotel (parter), București",
-      "imagine": "images/1372336929299247.jpg",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-10-20T06:44:38.641529+00:00"
-    },
     {
       "id": "2699238893923955-2026-10-29",
       "link": "https://www.facebook.com/events/2699238893923955/",
@@ -90,6 +35,17 @@
       "colectat_la": "2026-10-13T18:46:46.767147+00:00"
     },
     {
+      "id": "2699238893923955-2026-11-05",
+      "link": "https://www.facebook.com/events/2699238893923955/",
+      "titlu": "Latin Nights 4friends every thursday 2026",
+      "data_raw": "J, 5 nov. la 21:00",
+      "data_parsed": "2026-11-05T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "images/2699238893923955.jpg",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
+    },
+    {
       "id": "1612757666890582",
       "link": "https://www.facebook.com/events/1612757666890582/",
       "titlu": "The Secret – Noche Mexicana",
@@ -99,6 +55,17 @@
       "imagine": "images/1612757666890582.jpg",
       "sursa": "The Secret",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "2177936516454108",
+      "link": "https://www.facebook.com/events/2177936516454108/",
+      "titlu": "Golden Sundays — 8 Noiembrie",
+      "data_raw": "Dum, 8 nov. la 18:30",
+      "data_parsed": "2026-11-08T18:30:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "images/2177936516454108.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
     },
     {
       "id": "salsanama-2026-11-13",
@@ -111,6 +78,17 @@
       "sursa": "Salsanamá Romania",
       "manual": true,
       "colectat_la": "2026-10-15T00:00:00+00:00"
+    },
+    {
+      "id": "1638767327889599",
+      "link": "https://www.facebook.com/events/1638767327889599/",
+      "titlu": "Aventura Latino Party - Behind the Dancefloor | 14th November @ Azero Club",
+      "data_raw": "Sâm, 14 nov. la 21:00",
+      "data_parsed": "2026-11-14T21:00:00",
+      "locatie": "Azero Club, București",
+      "imagine": "images/1638767327889599.jpg",
+      "sursa": "Global Latino Bucharest",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
     },
     {
       "id": "1547563706147716",
@@ -133,6 +111,28 @@
       "imagine": "images/2069681907087108.jpg",
       "sursa": "Hypnotic Latin Party",
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
+      "id": "1491872722856715",
+      "link": "https://www.facebook.com/events/1491872722856715/",
+      "titlu": "The Social Night Royale — Ruby Rooms",
+      "data_raw": "Vi, 27 nov. la 22:30",
+      "data_parsed": "2026-11-27T22:30:00",
+      "locatie": "Restaurant Monarh, București",
+      "imagine": "images/1491872722856715.jpg",
+      "sursa": "The Social Dance Hub",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
+    },
+    {
+      "id": "28851565961132484",
+      "link": "https://www.facebook.com/events/28851565961132484/",
+      "titlu": "Revelionul Dansatorilor – Two Nights, One Vibe!",
+      "data_raw": "J, 31 dec. la 21:00",
+      "data_parsed": "2026-12-31T21:00:00",
+      "locatie": "Pandance Academy Sibiu, Sibiu",
+      "imagine": "images/28851565961132484.jpg",
+      "sursa": "Pandance Academy Sibiu",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
     },
     {
       "id": "1664773411664414",
@@ -177,6 +177,17 @@
       "imagine": "images/1408070568086769.jpg",
       "sursa": "Goza de Rou",
       "colectat_la": "2026-10-13T18:41:49.106863+00:00"
+    },
+    {
+      "id": "2132270347653792",
+      "link": "https://www.facebook.com/events/2132270347653792/",
+      "titlu": "Pandance Halloween Weekend 5th Edition",
+      "data_raw": "Vi, 29 oct. 2027 - 31 oct. 2027",
+      "data_parsed": "2027-10-29T00:00:00",
+      "locatie": "Pandance Academy Sibiu, Sibiu",
+      "imagine": "images/2132270347653792.jpg",
+      "sursa": "Pandance Academy Sibiu",
+      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
     }
   ]
 }
