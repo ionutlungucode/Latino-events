@@ -31,5 +31,8 @@ Linkurile `fbcdn` expiră, deci afișele se salvează în repo. Pentru fiecare e
 5. La ștergerea unui eveniment, șterge și poza lui din `images/`. Închide taburile deschise.
 6. La commit adaugă și `images/`.
 
+## Evenimente recurente (ex. Latin Nights 4friends, în fiecare joi)
+Afișul se schimbă **săptămânal**. Pentru fiecare dată nouă descarcă afișul curent din pagina evenimentului și salvează-l ca `images/<id>-<AAAA-LL-ZZ>.jpg` (nu reutiliza poza de la data anterioară). Nu suprascrie pozele joilor trecute. La ștergerea unei date, șterge și poza ei.
+
 ## Limitări cunoscute
 - Dacă o poză nu poate fi descărcată, `"imagine": ""` (cardul folosește fundalul degradat).
