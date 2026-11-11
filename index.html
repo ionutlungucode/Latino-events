@@ -194,6 +194,8 @@
   .f input, .f textarea{ font: 400 1rem 'Chivo', sans-serif; color: var(--navy); background: var(--wall); border: 2px solid var(--navy); border-radius: 6px; padding: 10px 11px; width: 100%; }
   .f textarea{ min-height: 84px; resize: vertical; }
   .hp{ position: absolute; left: -9999px; }
+  .agree{ grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: .88rem; line-height: 1.4; cursor: pointer; }
+  .agree input{ flex: none; width: 20px; height: 20px; margin-top: 1px; accent-color: var(--turq-d); }
   .send{ grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
   .send button{ font: 800 .95rem 'Chivo', sans-serif; letter-spacing: .08em; text-transform: uppercase; background: var(--pink); color: var(--navy); border: 3px solid var(--navy); border-radius: 8px; padding: 12px 22px; cursor: pointer; box-shadow: 4px 4px 0 var(--navy); }
   .send button:hover{ background: var(--sun); }
@@ -302,9 +304,13 @@
         <textarea id="f-det" name="detalii" maxlength="1000"></textarea>
       </div>
       <div class="f wide">
-        <label for="f-contact">Emailul tău <small>(opțional, doar dacă avem întrebări)</small></label>
-        <input id="f-contact" name="contact" type="email" autocomplete="email">
+        <label for="f-contact">Emailul tău <small>(doar ca să te putem întreba ceva despre eveniment)</small></label>
+        <input id="f-contact" name="contact" type="email" autocomplete="email" required>
       </div>
+      <label class="agree">
+        <input type="checkbox" name="acord_gdpr" value="da" required>
+        <span>Sunt de acord ca Latino Events să folosească datele trimise pentru a verifica și publica evenimentul, conform <a href="politica.html#date" target="_blank" rel="noopener">politicii de date personale</a>.</span>
+      </label>
       <div class="send">
         <button type="submit" id="sendBtn">Trimite evenimentul</button>
         <span class="status" id="status" role="status"></span>
@@ -314,7 +320,7 @@
 </section>
 
 <div class="tiles bottom" aria-hidden="true"></div>
-<footer><div class="page">Latino Events · lista se actualizează din paginile de Facebook ale organizatorilor.</div></footer>
+<footer><div class="page">Latino Events · lista se actualizează din paginile de Facebook ale organizatorilor. · <a href="politica.html">Cookie-uri și date personale</a></div></footer>
 
 <script>
 /* ============================================================
