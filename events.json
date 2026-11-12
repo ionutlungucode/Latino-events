@@ -1,28 +1,6 @@
 {
-  "actualizat_la": "2026-11-11T08:31:25.088940+00:00",
+  "actualizat_la": "2026-11-12T15:08:43.148366+00:00",
   "events": [
-    {
-      "id": "1160043622728457",
-      "link": "https://www.facebook.com/events/1160043622728457/",
-      "titlu": "Pandance Halloween Weekend 4th Edition",
-      "data_raw": "Vi, 30 oct. - 1 nov.",
-      "data_parsed": "2026-10-30T00:00:00",
-      "locatie": "Sibiu",
-      "imagine": "images/1160043622728457.jpg",
-      "sursa": "Pandance Academy Sibiu",
-      "colectat_la": "2026-10-13T19:28:33.045204+00:00"
-    },
-    {
-      "id": "sbk-2026-10-30",
-      "link": "https://www.facebook.com/profile.php?id=61562749629734",
-      "titlu": "SBK Latino Party — Moonlight Spell (Halloween Edition)",
-      "data_raw": "Vi, 30 oct. la 23:00",
-      "data_parsed": "2026-10-30T23:00:00",
-      "locatie": "Terra Events Hall, București",
-      "imagine": "images/sbk-2026-10-30.jpg",
-      "sursa": "SBK Latino Party",
-      "colectat_la": "2026-10-13T18:46:46.767147+00:00"
-    },
     {
       "id": "2699238893923955-2026-11-05",
       "link": "https://www.facebook.com/events/2699238893923955/",
@@ -91,6 +69,17 @@
       "colectat_la": "2026-11-04T15:08:12.210216+00:00"
     },
     {
+      "id": "1479790050670418",
+      "link": "https://www.facebook.com/events/1479790050670418/",
+      "titlu": "Golden Sundays — 15 Noiembrie",
+      "data_raw": "Dum, 15 nov. la 18:30",
+      "data_parsed": "2026-11-15T18:30:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "images/1479790050670418.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-11-12T15:08:43.148366+00:00"
+    },
+    {
       "id": "1547563706147716",
       "link": "https://www.facebook.com/events/1547563706147716/",
       "titlu": "15th Transilvania Salsa Fest",
@@ -122,6 +111,28 @@
       "imagine": "images/1491872722856715.jpg",
       "sursa": "The Social Dance Hub",
       "colectat_la": "2026-11-04T15:08:12.210216+00:00"
+    },
+    {
+      "id": "1819155252532748",
+      "link": "https://www.facebook.com/events/1819155252532748/",
+      "titlu": "La Lokura 5th Edition — Cinderella's Ball",
+      "data_raw": "Sâm, 28 nov. la 21:00",
+      "data_parsed": "2026-11-28T21:00:00",
+      "locatie": "Casa Presei Libere, București",
+      "imagine": "images/1819155252532748.jpg",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-11-12T15:08:43.148366+00:00"
+    },
+    {
+      "id": "4901107030120533",
+      "link": "https://www.facebook.com/events/4901107030120533/",
+      "titlu": "Aventura Latino Party — St. Nicholas Edition",
+      "data_raw": "Vi, 4 dec. la 21:00",
+      "data_parsed": "2026-12-04T21:00:00",
+      "locatie": "Azero Club, București",
+      "imagine": "images/4901107030120533.jpg",
+      "sursa": "Global Latino Bucharest",
+      "colectat_la": "2026-11-12T15:08:43.148366+00:00"
     },
     {
       "id": "28851565961132484",
