@@ -17,5 +17,9 @@
   "Hypnotic Latin Party": "https://www.facebook.com/profile.php?id=61594259072449&sk=events",
   "National Salsa Congress Romania": "https://www.facebook.com/National.Salsa.Congress.Romania/events",
   "Pandance Academy Sibiu": "https://www.facebook.com/PandanceAcademySibiu/events",
-  "Transilvania Salsa Fest": "https://www.facebook.com/transilvaniasalsafest/events"
+  "Transilvania Salsa Fest": "https://www.facebook.com/transilvaniasalsafest/events",
+  "Restaurant Paparazzi": {
+    "url": "https://www.facebook.com/profile.php?id=61557693172977&sk=events",
+    "doar_latino": true
+  }
 }

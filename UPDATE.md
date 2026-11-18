@@ -11,6 +11,9 @@ Se rulează cu Claude în Chrome (sesiune Facebook logată). Scraperul Python (`
 ## Evenimente manuale
 Intrările cu `"manual": true` (adăugate de utilizator, fără pagină/link Facebook) NU se șterg și nu se modifică; se elimină doar după regula de 7 zile după dată (și se șterge poza lor). Fără `link` cardul nu e clickabil.
 
+## Pagini cu `"doar_latino": true` (ex. Restaurant Paparazzi)
+Pagina are și evenimente non-latino (retro, whist, puzzle, revelion etc.). Păstrează doar petrecerile latino: titlul sau descrierea evenimentului (deschide pagina lui și citește „Detalii”; ignoră sidebar-ul „Evenimente sugerate”, care conține alte evenimente) menționează salsa, bachata, kizomba, latino/latin vibes, merengue etc. Dacă nu e clar, nu include evenimentul.
+
 ## Pași
 1. Citește `pages.json`.
 2. Pagini normale: deschide `https://www.facebook.com/<slug>/upcoming_hosted_events` (pentru `profile.php?id=X` folosește `...profile.php?id=X&sk=events`). Citește cardurile cu JS (`a[href*="/events/"]`, text din cel mai apropiat părinte care conține „Interesat/găzduit”). Chrome blochează output cu query string: nu returna URL-uri cu `?`.

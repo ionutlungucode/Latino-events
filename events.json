@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-11-12T15:08:43.148366+00:00",
+  "actualizat_la": "2026-11-18T11:14:11.360414+00:00",
   "events": [
     {
       "id": "2699238893923955-2026-11-05",
@@ -91,6 +91,17 @@
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
     },
     {
+      "id": "1113012904779775",
+      "link": "https://www.facebook.com/events/1113012904779775/",
+      "titlu": "PAPARAZZI CHOCOLATE",
+      "data_raw": "Vi, 20 nov. la 22:00",
+      "data_parsed": "2026-11-20T22:00:00",
+      "locatie": "Restaurant Paparazzi, Strada Viorele 26, București",
+      "imagine": "images/1113012904779775.jpg",
+      "sursa": "Restaurant Paparazzi",
+      "colectat_la": "2026-11-18T11:14:11.360414+00:00"
+    },
+    {
       "id": "2069681907087108",
       "link": "https://www.facebook.com/events/2069681907087108/",
       "titlu": "Hypnotic Latin Party",
@@ -122,6 +133,17 @@
       "imagine": "images/1819155252532748.jpg",
       "sursa": "Latin Nights 4friends",
       "colectat_la": "2026-11-12T15:08:43.148366+00:00"
+    },
+    {
+      "id": "1436473178625701",
+      "link": "https://www.facebook.com/events/1436473178625701/",
+      "titlu": "AZEMBORA ! Kizomba @ Paparazzi",
+      "data_raw": "Sâm, 28 nov. la 21:00",
+      "data_parsed": "2026-11-28T21:00:00",
+      "locatie": "Restaurant Paparazzi, București",
+      "imagine": "images/1436473178625701.jpg",
+      "sursa": "Restaurant Paparazzi",
+      "colectat_la": "2026-11-18T11:14:11.360414+00:00"
     },
     {
       "id": "4901107030120533",
