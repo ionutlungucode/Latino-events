@@ -1,39 +1,6 @@
 {
-  "actualizat_la": "2026-11-18T11:14:11.360414+00:00",
+  "actualizat_la": "2026-11-18T11:19:39.617555+00:00",
   "events": [
-    {
-      "id": "2699238893923955-2026-11-05",
-      "link": "https://www.facebook.com/events/2699238893923955/",
-      "titlu": "Latin Nights 4friends every thursday 2026",
-      "data_raw": "J, 5 nov. la 21:00",
-      "data_parsed": "2026-11-05T21:00:00",
-      "locatie": "Victoriei Ballroom, București",
-      "imagine": "images/2699238893923955.jpg",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
-    },
-    {
-      "id": "1612757666890582",
-      "link": "https://www.facebook.com/events/1612757666890582/",
-      "titlu": "The Secret – Noche Mexicana",
-      "data_raw": "Vi, 6 nov. - 7 nov.",
-      "data_parsed": "2026-11-06T00:00:00",
-      "locatie": "",
-      "imagine": "images/1612757666890582.jpg",
-      "sursa": "The Secret",
-      "colectat_la": "2026-10-13T18:41:49.106863+00:00"
-    },
-    {
-      "id": "2177936516454108",
-      "link": "https://www.facebook.com/events/2177936516454108/",
-      "titlu": "Golden Sundays — 8 Noiembrie",
-      "data_raw": "Dum, 8 nov. la 18:30",
-      "data_parsed": "2026-11-08T18:30:00",
-      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
-      "imagine": "images/2177936516454108.jpg",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
-    },
     {
       "id": "2699238893923955-2026-11-12",
       "link": "https://www.facebook.com/events/2699238893923955/",
@@ -91,6 +58,17 @@
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
     },
     {
+      "id": "2699238893923955-2026-11-19",
+      "link": "https://www.facebook.com/events/2699238893923955/",
+      "titlu": "Latin Nights 4friends every thursday 2026",
+      "data_raw": "J, 19 nov. la 21:00",
+      "data_parsed": "2026-11-19T21:00:00",
+      "locatie": "Victoriei Ballroom, București",
+      "imagine": "images/2699238893923955-2026-11-19.jpg",
+      "sursa": "Latin Nights 4friends",
+      "colectat_la": "2026-11-18T11:19:39.617555+00:00"
+    },
+    {
       "id": "1113012904779775",
       "link": "https://www.facebook.com/events/1113012904779775/",
       "titlu": "PAPARAZZI CHOCOLATE",
@@ -102,6 +80,17 @@
       "colectat_la": "2026-11-18T11:14:11.360414+00:00"
     },
     {
+      "id": "2194659888108421",
+      "link": "https://www.facebook.com/events/2194659888108421/",
+      "titlu": "The Friday Mix",
+      "data_raw": "Vi, 20 nov. la 22:30",
+      "data_parsed": "2026-11-20T22:30:00",
+      "locatie": "Mille 18 Events, București",
+      "imagine": "images/2194659888108421.jpg",
+      "sursa": "The Social Dance Hub",
+      "colectat_la": "2026-11-18T11:19:39.617555+00:00"
+    },
+    {
       "id": "2069681907087108",
       "link": "https://www.facebook.com/events/2069681907087108/",
       "titlu": "Hypnotic Latin Party",
@@ -111,6 +100,17 @@
       "imagine": "images/2069681907087108.jpg",
       "sursa": "Hypnotic Latin Party",
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
+      "id": "2365310944008343",
+      "link": "https://www.facebook.com/events/2365310944008343/",
+      "titlu": "GOLDEN SUNDAYS - DUMINICĂ, 22 NOIEMBRIE 2026",
+      "data_raw": "Dum, 22 nov. la 18:30",
+      "data_parsed": "2026-11-22T18:30:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "images/2365310944008343.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-11-18T11:19:39.617555+00:00"
     },
     {
       "id": "1491872722856715",
@@ -177,6 +177,17 @@
       "imagine": "images/1664773411664414.jpg",
       "sursa": "National Salsa Congress Romania",
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
+    },
+    {
+      "id": "2786292128435003",
+      "link": "https://www.facebook.com/events/2786292128435003/",
+      "titlu": "OBSESSION latino party - EMERALD DESIRE",
+      "data_raw": "Vi, 29 ian. 2027 la 22:00",
+      "data_parsed": "2027-01-29T22:00:00",
+      "locatie": "București",
+      "imagine": "images/2786292128435003.jpg",
+      "sursa": "Obsession Latino Party",
+      "colectat_la": "2026-11-18T11:19:39.617555+00:00"
     },
     {
       "id": "1756539045512473",
