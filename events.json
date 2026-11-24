@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-11-24T17:02:56.208337+00:00",
+  "actualizat_la": "2026-11-24T17:07:40.904480+00:00",
   "events": [
     {
       "id": "1547563706147716",
@@ -55,17 +55,6 @@
       "imagine": "images/2069681907087108.jpg",
       "sursa": "Hypnotic Latin Party",
       "colectat_la": "2026-10-13T19:28:33.045204+00:00"
-    },
-    {
-      "id": "2365310944008343",
-      "link": "https://www.facebook.com/events/2365310944008343/",
-      "titlu": "GOLDEN SUNDAYS - DUMINICĂ, 22 NOIEMBRIE 2026",
-      "data_raw": "Dum, 22 nov. la 18:30",
-      "data_parsed": "2026-11-22T18:30:00",
-      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
-      "imagine": "images/2365310944008343.jpg",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-11-18T11:19:39.617555+00:00"
     },
     {
       "id": "1493178132660238",
@@ -177,6 +166,17 @@
       "sursa": "Urban Kiz & Tarraxo Bucharest",
       "colectat_la": "2026-11-24T17:02:56.208337+00:00",
       "manual": true
+    },
+    {
+      "id": "2143234599645263",
+      "link": "https://www.facebook.com/events/2143234599645263/",
+      "titlu": "GOLDEN SUNDAYS – GOLDEN CHRISTMAS EDITION | 26 DECEMBER 2026",
+      "data_raw": "Sâm, 26 dec. la 19:00",
+      "data_parsed": "2026-12-26T19:00:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "images/2143234599645263.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-11-24T17:07:40.904480+00:00"
     },
     {
       "id": "1768797334127054",
