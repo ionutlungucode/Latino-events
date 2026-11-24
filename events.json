@@ -1,51 +1,6 @@
 {
-  "actualizat_la": "2026-11-18T11:19:39.617555+00:00",
+  "actualizat_la": "2026-11-24T17:02:56.208337+00:00",
   "events": [
-    {
-      "id": "2699238893923955-2026-11-12",
-      "link": "https://www.facebook.com/events/2699238893923955/",
-      "titlu": "Latin Nights 4friends every thursday 2026",
-      "data_raw": "J, 12 nov. la 21:00",
-      "data_parsed": "2026-11-12T21:00:00",
-      "locatie": "Victoriei Ballroom, București",
-      "imagine": "images/2699238893923955-2026-11-12.jpg",
-      "sursa": "Latin Nights 4friends",
-      "colectat_la": "2026-11-11T08:31:25.088780+00:00"
-    },
-    {
-      "id": "salsanama-2026-11-13",
-      "link": "",
-      "titlu": "Salsanamá One vs One Romania",
-      "data_raw": "Vi, 13 nov. - 15 nov.",
-      "data_parsed": "2026-11-13T00:00:00",
-      "locatie": "",
-      "imagine": "images/salsanama-2026-11-13.jpg",
-      "sursa": "Salsanamá Romania",
-      "manual": true,
-      "colectat_la": "2026-10-15T00:00:00+00:00"
-    },
-    {
-      "id": "1638767327889599",
-      "link": "https://www.facebook.com/events/1638767327889599/",
-      "titlu": "Aventura Latino Party - Behind the Dancefloor | 14th November @ Azero Club",
-      "data_raw": "Sâm, 14 nov. la 21:00",
-      "data_parsed": "2026-11-14T21:00:00",
-      "locatie": "Azero Club, București",
-      "imagine": "images/1638767327889599.jpg",
-      "sursa": "Global Latino Bucharest",
-      "colectat_la": "2026-11-04T15:08:12.210216+00:00"
-    },
-    {
-      "id": "1479790050670418",
-      "link": "https://www.facebook.com/events/1479790050670418/",
-      "titlu": "Golden Sundays — 15 Noiembrie",
-      "data_raw": "Dum, 15 nov. la 18:30",
-      "data_parsed": "2026-11-15T18:30:00",
-      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
-      "imagine": "images/1479790050670418.jpg",
-      "sursa": "Golden Sundays Latino Party",
-      "colectat_la": "2026-11-12T15:08:43.148366+00:00"
-    },
     {
       "id": "1547563706147716",
       "link": "https://www.facebook.com/events/1547563706147716/",
@@ -113,6 +68,17 @@
       "colectat_la": "2026-11-18T11:19:39.617555+00:00"
     },
     {
+      "id": "1493178132660238",
+      "link": "https://www.facebook.com/events/1493178132660238/",
+      "titlu": "LATIN ESCAPE – OPPOSITE DAY",
+      "data_raw": "Vi, 27 nov. la 21:00",
+      "data_parsed": "2026-11-27T21:00:00",
+      "locatie": "DaVinci Bobalna, Ploiești",
+      "imagine": "images/1493178132660238.jpg",
+      "sursa": "Latin Escape",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
       "id": "1491872722856715",
       "link": "https://www.facebook.com/events/1491872722856715/",
       "titlu": "The Social Night Royale — Ruby Rooms",
@@ -146,6 +112,28 @@
       "colectat_la": "2026-11-18T11:14:11.360414+00:00"
     },
     {
+      "id": "649603471173482-2026-11-29",
+      "link": "https://www.facebook.com/events/649603471173482/",
+      "titlu": "Sunday Salsa Social by Salsa On Sundays",
+      "data_raw": "Dum, 29 nov. la 14:00",
+      "data_parsed": "2026-11-29T14:00:00",
+      "locatie": "Ipotetic, București",
+      "imagine": "images/649603471173482.jpg",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
+      "id": "997685846071533",
+      "link": "https://www.facebook.com/events/997685846071533/",
+      "titlu": "DANCERS NIGHT - 31 NOI@SILVER61 Preoteasa (OldSchool) - Special Edition",
+      "data_raw": "Lu, 30 nov. la 21:00",
+      "data_parsed": "2026-11-30T21:00:00",
+      "locatie": "Restaurant Old School, București",
+      "imagine": "images/997685846071533.jpg",
+      "sursa": "Galaxy Dance Company & Events",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
       "id": "4901107030120533",
       "link": "https://www.facebook.com/events/4901107030120533/",
       "titlu": "Aventura Latino Party — St. Nicholas Edition",
@@ -155,6 +143,51 @@
       "imagine": "images/4901107030120533.jpg",
       "sursa": "Global Latino Bucharest",
       "colectat_la": "2026-11-12T15:08:43.148366+00:00"
+    },
+    {
+      "id": "2341817706298614",
+      "link": "https://www.facebook.com/events/2341817706298614/",
+      "titlu": "EL FESTIVAL by SALSA ON SUNDAYS BUCHAREST - 2nd YEAR ANNIVERSARY",
+      "data_raw": "Vi, 11 dec. - 13 dec.",
+      "data_parsed": "2026-12-11T00:00:00",
+      "locatie": "București",
+      "imagine": "images/2341817706298614.jpg",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
+      "id": "4510287955968026",
+      "link": "https://www.facebook.com/events/4510287955968026/",
+      "titlu": "TWO LINES. ONE PARTY.",
+      "data_raw": "Vi, 11 dec. la 21:00",
+      "data_parsed": "2026-12-11T21:00:00",
+      "locatie": "DaVinci Bobalna, Ploiești",
+      "imagine": "images/4510287955968026.jpg",
+      "sursa": "Latin Escape",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
+      "id": "2515567752283514",
+      "link": "https://www.facebook.com/events/2515567752283514/",
+      "titlu": "Urban Kiz & Tarraxo Bootcamp Bucharest",
+      "data_raw": "Sâm, 19 dec. la 12:00",
+      "data_parsed": "2026-12-19T12:00:00",
+      "locatie": "Adicto, Strada Vaselor 10, București",
+      "imagine": "images/2515567752283514.jpg",
+      "sursa": "Urban Kiz & Tarraxo Bucharest",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00",
+      "manual": true
+    },
+    {
+      "id": "1768797334127054",
+      "link": "https://www.facebook.com/events/1768797334127054/",
+      "titlu": "¡A BAILAR! By Salsa on Sundays Bucharest",
+      "data_raw": "Sâm, 26 dec. la 22:00",
+      "data_parsed": "2026-12-26T22:00:00",
+      "locatie": "Ipotetic Club, București",
+      "imagine": "images/1768797334127054.jpg",
+      "sursa": "Salsa On Sundays",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
     },
     {
       "id": "28851565961132484",
@@ -188,6 +221,28 @@
       "imagine": "images/2786292128435003.jpg",
       "sursa": "Obsession Latino Party",
       "colectat_la": "2026-11-18T11:19:39.617555+00:00"
+    },
+    {
+      "id": "1954163295181299",
+      "link": "https://www.facebook.com/events/1954163295181299/",
+      "titlu": "Aniversare LATIN LOVE 14 Ani",
+      "data_raw": "Vi, 19 feb 2027 la 20:00",
+      "data_parsed": "2027-02-19T20:00:00",
+      "locatie": "Schnitzel Haus Paulesti",
+      "imagine": "images/1954163295181299.jpg",
+      "sursa": "Latin Escape",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
+      "id": "956145186995119",
+      "link": "https://www.facebook.com/events/956145186995119/",
+      "titlu": "Salsa Addicted Festival | 2027",
+      "data_raw": "J, 11 mar. 2027 - 15 mar. 2027",
+      "data_parsed": "2027-03-11T00:00:00",
+      "locatie": "Harmony Events, Timișoara",
+      "imagine": "images/956145186995119.jpg",
+      "sursa": "Salsa Addicted Festival",
+      "colectat_la": "2026-11-24T17:02:56.208337+00:00"
     },
     {
       "id": "1756539045512473",
