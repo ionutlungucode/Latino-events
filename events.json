@@ -1,5 +1,5 @@
 {
-  "actualizat_la": "2026-11-24T17:11:15.330164+00:00",
+  "actualizat_la": "2026-11-25T09:57:10.401106+00:00",
   "events": [
     {
       "id": "1547563706147716",
@@ -68,6 +68,18 @@
       "colectat_la": "2026-11-24T17:11:15.330164+00:00"
     },
     {
+      "id": "avangard-2026-11-27",
+      "link": "https://www.instagram.com/p/De88rYwoSk_/",
+      "titlu": "Avangard Latino Party",
+      "data_raw": "Vi, 27 nov.",
+      "data_parsed": "2026-11-27T00:00:00",
+      "locatie": "Velveto Events, București",
+      "imagine": "images/avangard-2026-11-27.jpg",
+      "sursa": "Avangard Latino Party",
+      "colectat_la": "2026-11-25T09:57:10.401106+00:00",
+      "manual": true
+    },
+    {
       "id": "1493178132660238",
       "link": "https://www.facebook.com/events/1493178132660238/",
       "titlu": "LATIN ESCAPE – OPPOSITE DAY",
@@ -121,6 +133,18 @@
       "imagine": "images/649603471173482.jpg",
       "sursa": "Salsa On Sundays",
       "colectat_la": "2026-11-24T17:02:56.208337+00:00"
+    },
+    {
+      "id": "1703149197995541",
+      "link": "https://www.facebook.com/events/1703149197995541/",
+      "titlu": "Golden Sundays - Luni, 30 Noiembrie",
+      "data_raw": "Lu, 30 nov. la 19:00",
+      "data_parsed": "2026-11-30T19:00:00",
+      "locatie": "Amethyst Rooftop, Union Plaza Hotel, București",
+      "imagine": "images/1703149197995541.jpg",
+      "sursa": "Golden Sundays Latino Party",
+      "colectat_la": "2026-11-25T09:57:10.401106+00:00",
+      "manual": true
     },
     {
       "id": "997685846071533",
